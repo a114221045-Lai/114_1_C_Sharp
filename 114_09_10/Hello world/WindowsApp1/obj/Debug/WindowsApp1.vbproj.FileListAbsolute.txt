@@ -1,0 +1,12 @@
+C:\Users\m303\Desktop\114_1_C_Sharp\114_09_10\Hello world\WindowsApp1\bin\Debug\From1.cs.exe.config
+C:\Users\m303\Desktop\114_1_C_Sharp\114_09_10\Hello world\WindowsApp1\bin\Debug\From1.cs.exe
+C:\Users\m303\Desktop\114_1_C_Sharp\114_09_10\Hello world\WindowsApp1\bin\Debug\From1.cs.pdb
+C:\Users\m303\Desktop\114_1_C_Sharp\114_09_10\Hello world\WindowsApp1\bin\Debug\From1.cs.xml
+C:\Users\m303\Desktop\114_1_C_Sharp\114_09_10\Hello world\WindowsApp1\obj\Debug\WindowsApp1.vbproj.AssemblyReference.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_09_10\Hello world\WindowsApp1\obj\Debug\WindowsApp1.Form1.resources
+C:\Users\m303\Desktop\114_1_C_Sharp\114_09_10\Hello world\WindowsApp1\obj\Debug\WindowsApp1.Resources.resources
+C:\Users\m303\Desktop\114_1_C_Sharp\114_09_10\Hello world\WindowsApp1\obj\Debug\WindowsApp1.vbproj.GenerateResource.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_09_10\Hello world\WindowsApp1\obj\Debug\WindowsApp1.vbproj.CoreCompileInputs.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_09_10\Hello world\WindowsApp1\obj\Debug\From1.cs.exe
+C:\Users\m303\Desktop\114_1_C_Sharp\114_09_10\Hello world\WindowsApp1\obj\Debug\From1.cs.xml
+C:\Users\m303\Desktop\114_1_C_Sharp\114_09_10\Hello world\WindowsApp1\obj\Debug\From1.cs.pdb
