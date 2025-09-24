@@ -8,3 +8,4 @@ C:\Users\m303\Desktop\114_1_C_Sharp\114_09_17\Tutorial_2_2\Tutorial_2_2\bin\Debu
 C:\Users\m303\Desktop\114_1_C_Sharp\114_09_17\Tutorial_2_2\Tutorial_2_2\bin\Debug\Tutorial_2_2.pdb
 C:\Users\m303\Desktop\114_1_C_Sharp\114_09_17\Tutorial_2_2\Tutorial_2_2\obj\Debug\Tutorial_2_2.exe
 C:\Users\m303\Desktop\114_1_C_Sharp\114_09_17\Tutorial_2_2\Tutorial_2_2\obj\Debug\Tutorial_2_2.pdb
+C:\Users\m303\Desktop\114_1_C_Sharp\114_09_17\Tutorial_2_2\Tutorial_2_2\obj\Debug\Tutorial_2_2.exe.config
