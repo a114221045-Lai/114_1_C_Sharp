@@ -1,0 +1,11 @@
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_01\Tutrorial_3_1\Tutrorial_3_1\obj\Debug\Tutrorial_3_1.csproj.AssemblyReference.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_01\Tutrorial_3_1\Tutrorial_3_1\obj\Debug\Tutrorial_3_1.Properties.Resources.resources
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_01\Tutrorial_3_1\Tutrorial_3_1\obj\Debug\Tutrorial_3_1.csproj.GenerateResource.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_01\Tutrorial_3_1\Tutrorial_3_1\obj\Debug\Tutrorial_3_1.csproj.CoreCompileInputs.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_01\Tutrorial_3_1\Tutrorial_3_1\obj\Debug\Tutrorial_3_1.BirthDateString.resources
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_01\Tutrorial_3_1\Tutrorial_3_1\bin\Debug\Tutrorial_3_1.exe.config
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_01\Tutrorial_3_1\Tutrorial_3_1\bin\Debug\Tutrorial_3_1.exe
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_01\Tutrorial_3_1\Tutrorial_3_1\bin\Debug\Tutrorial_3_1.pdb
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_01\Tutrorial_3_1\Tutrorial_3_1\obj\Debug\Tutrorial_3_1.exe
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_01\Tutrorial_3_1\Tutrorial_3_1\obj\Debug\Tutrorial_3_1.pdb
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_01\Tutrorial_3_1\Tutrorial_3_1\obj\Debug\Tutrorial_3_1.exe.config

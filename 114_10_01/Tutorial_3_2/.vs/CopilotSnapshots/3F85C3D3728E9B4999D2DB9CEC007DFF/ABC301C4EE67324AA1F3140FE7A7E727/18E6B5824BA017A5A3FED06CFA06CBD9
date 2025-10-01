@@ -1,0 +1,149 @@
+﻿namespace Tutorial_3_2
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// 設計工具所需的變數。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 清除任何使用中的資源。
+        /// </summary>
+        /// <param name="disposing">如果應該處置受控資源則為 true，否則為 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form 設計工具產生的程式碼
+
+        /// <summary>
+        /// 此為設計工具支援所需的方法 - 請勿使用程式碼編輯器修改
+        /// 這個方法的內容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.milesLabel = new System.Windows.Forms.Label();
+            this.gallonsLabel = new System.Windows.Forms.Label();
+            this.outputDescriptionLabel = new System.Windows.Forms.Label();
+            this.milesTextBox = new System.Windows.Forms.TextBox();
+            this.gallonsTextBox = new System.Windows.Forms.TextBox();
+            this.mpgLabel = new System.Windows.Forms.Label();
+            this.calculateButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // milesLabel
+            // 
+            this.milesLabel.AutoSize = true;
+            this.milesLabel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.milesLabel.Location = new System.Drawing.Point(134, 42);
+            this.milesLabel.Name = "milesLabel";
+            this.milesLabel.Size = new System.Drawing.Size(517, 48);
+            this.milesLabel.TabIndex = 0;
+            this.milesLabel.Text = "the number of miles driven";
+            // 
+            // gallonsLabel
+            // 
+            this.gallonsLabel.AutoSize = true;
+            this.gallonsLabel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.gallonsLabel.Location = new System.Drawing.Point(114, 119);
+            this.gallonsLabel.Name = "gallonsLabel";
+            this.gallonsLabel.Size = new System.Drawing.Size(440, 48);
+            this.gallonsLabel.TabIndex = 1;
+            this.gallonsLabel.Text = "the gallons of gas used";
+            // 
+            // outputDescriptionLabel
+            // 
+            this.outputDescriptionLabel.AutoSize = true;
+            this.outputDescriptionLabel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.outputDescriptionLabel.Location = new System.Drawing.Point(114, 246);
+            this.outputDescriptionLabel.Name = "outputDescriptionLabel";
+            this.outputDescriptionLabel.Size = new System.Drawing.Size(317, 48);
+            this.outputDescriptionLabel.TabIndex = 2;
+            this.outputDescriptionLabel.Text = "Your car\'s MPG";
+            // 
+            // milesTextBox
+            // 
+            this.milesTextBox.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.milesTextBox.Location = new System.Drawing.Point(408, 51);
+            this.milesTextBox.Name = "milesTextBox";
+            this.milesTextBox.Size = new System.Drawing.Size(281, 65);
+            this.milesTextBox.TabIndex = 3;
+            // 
+            // gallonsTextBox
+            // 
+            this.gallonsTextBox.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.gallonsTextBox.Location = new System.Drawing.Point(408, 142);
+            this.gallonsTextBox.Name = "gallonsTextBox";
+            this.gallonsTextBox.Size = new System.Drawing.Size(281, 65);
+            this.gallonsTextBox.TabIndex = 4;
+            // 
+            // mpgLabel
+            // 
+            this.mpgLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mpgLabel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.mpgLabel.Location = new System.Drawing.Point(408, 238);
+            this.mpgLabel.Name = "mpgLabel";
+            this.mpgLabel.Size = new System.Drawing.Size(281, 65);
+            this.mpgLabel.TabIndex = 5;
+            this.mpgLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // calculateButton
+            // 
+            this.calculateButton.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.calculateButton.Location = new System.Drawing.Point(72, 357);
+            this.calculateButton.Name = "calculateButton";
+            this.calculateButton.Size = new System.Drawing.Size(359, 61);
+            this.calculateButton.TabIndex = 6;
+            this.calculateButton.Text = "calculate MPG";
+            this.calculateButton.UseVisualStyleBackColor = true;
+            // 
+            // exitButton
+            // 
+            this.exitButton.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.exitButton.Location = new System.Drawing.Point(536, 357);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(217, 61);
+            this.exitButton.TabIndex = 7;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.calculateButton);
+            this.Controls.Add(this.mpgLabel);
+            this.Controls.Add(this.gallonsTextBox);
+            this.Controls.Add(this.milesTextBox);
+            this.Controls.Add(this.outputDescriptionLabel);
+            this.Controls.Add(this.gallonsLabel);
+            this.Controls.Add(this.milesLabel);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label milesLabel;
+        private System.Windows.Forms.Label gallonsLabel;
+        private System.Windows.Forms.Label outputDescriptionLabel;
+        private System.Windows.Forms.TextBox milesTextBox;
+        private System.Windows.Forms.TextBox gallonsTextBox;
+        private System.Windows.Forms.Label mpgLabel;
+        private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.Button exitButton;
+    }
+}
+
