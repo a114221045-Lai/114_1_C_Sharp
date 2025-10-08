@@ -21,7 +21,7 @@ namespace Tutrorial_3_1
         {
             string output;
 
-            output = YearTextBox.Text + "年 " +
+            output = "中華民國"+ YearTextBox.Text + "年 " +
               MonthTextBox.Text + "月 " +
               dayOfMonthTextBox.Text + "日 "
               + "星期" + dayOfWeekTextBox.Text;
