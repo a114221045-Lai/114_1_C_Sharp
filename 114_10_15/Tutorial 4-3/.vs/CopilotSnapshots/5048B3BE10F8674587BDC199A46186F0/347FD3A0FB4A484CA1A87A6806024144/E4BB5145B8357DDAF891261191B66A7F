@@ -1,0 +1,176 @@
+﻿namespace Loan_Qualifier
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// 必要的設計工具變數。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 清除正在使用的資源。
+        /// </summary>
+        /// <param name="disposing">如果應釋放受控資源則為 true，否則為 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form 設計產生的程式碼
+
+        /// <summary>
+        /// 設計工具支援所需的方法 - 請勿以程式碼編輯器修改
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.salaryPromptLabel = new System.Windows.Forms.Label();
+            this.yearsPromptLabel = new System.Windows.Forms.Label();
+            this.salaryTextBox = new System.Windows.Forms.TextBox();
+            this.yearsTextBox = new System.Windows.Forms.TextBox();
+            this.outputDescriptionLabel = new System.Windows.Forms.Label();
+            this.decisionLabel = new System.Windows.Forms.Label();
+            this.checkButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // salaryPromptLabel
+            // 
+            this.salaryPromptLabel.AutoSize = true;
+            this.salaryPromptLabel.Location = new System.Drawing.Point(60, 13);
+            this.salaryPromptLabel.Name = "salaryPromptLabel";
+            this.salaryPromptLabel.Size = new System.Drawing.Size(73, 13);
+            this.salaryPromptLabel.TabIndex = 0;
+            // 設定年薪標籤的文字為繁體中文，字型大小為 18
+            this.salaryPromptLabel.Text = "年薪：";
+            this.salaryPromptLabel.Font = new System.Drawing.Font("Microsoft JhengHei", 18F);
+            // 
+            // yearsPromptLabel
+            // 
+            this.yearsPromptLabel.AutoSize = true;
+            this.yearsPromptLabel.Location = new System.Drawing.Point(31, 39);
+            this.yearsPromptLabel.Name = "yearsPromptLabel";
+            this.yearsPromptLabel.Size = new System.Drawing.Size(102, 13);
+            this.yearsPromptLabel.TabIndex = 1;
+            // 設定現職年資標籤的文字為繁體中文，字型大小為 18
+            this.yearsPromptLabel.Text = "現職年資：";
+            this.yearsPromptLabel.Font = new System.Drawing.Font("Microsoft JhengHei", 18F);
+            // 
+            // salaryTextBox
+            // 
+            this.salaryTextBox.Location = new System.Drawing.Point(138, 9);
+            this.salaryTextBox.Name = "salaryTextBox";
+            this.salaryTextBox.Size = new System.Drawing.Size(100, 20);
+            this.salaryTextBox.TabIndex = 2;
+            // 設定年薪輸入框的字型大小為 18
+            this.salaryTextBox.Font = new System.Drawing.Font("Microsoft JhengHei", 18F);
+            // 
+            // yearsTextBox
+            // 
+            this.yearsTextBox.Location = new System.Drawing.Point(138, 35);
+            this.yearsTextBox.Name = "yearsTextBox";
+            this.yearsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.yearsTextBox.TabIndex = 3;
+            // 設定年資輸入框的字型大小為 18
+            this.yearsTextBox.Font = new System.Drawing.Font("Microsoft JhengHei", 18F);
+            // 
+            // outputDescriptionLabel
+            // 
+            this.outputDescriptionLabel.AutoSize = true;
+            this.outputDescriptionLabel.Location = new System.Drawing.Point(12, 73);
+            this.outputDescriptionLabel.Name = "outputDescriptionLabel";
+            this.outputDescriptionLabel.Size = new System.Drawing.Size(76, 13);
+            this.outputDescriptionLabel.TabIndex = 4;
+            // 設定結果說明標籤的文字為繁體中文，字型大小為 18
+            this.outputDescriptionLabel.Text = "貸款審核結果：";
+            this.outputDescriptionLabel.Font = new System.Drawing.Font("Microsoft JhengHei", 18F);
+            // 
+            // decisionLabel
+            // 
+            this.decisionLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.decisionLabel.Location = new System.Drawing.Point(12, 96);
+            this.decisionLabel.Name = "decisionLabel";
+            this.decisionLabel.Size = new System.Drawing.Size(260, 23);
+            this.decisionLabel.TabIndex = 5;
+            this.decisionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 設定審核結果顯示標籤的字型大小為 18
+            this.decisionLabel.Font = new System.Drawing.Font("Microsoft JhengHei", 18F);
+            // 
+            // checkButton
+            // 
+            this.checkButton.Location = new System.Drawing.Point(12, 135);
+            this.checkButton.Name = "checkButton";
+            this.checkButton.Size = new System.Drawing.Size(82, 35);
+            this.checkButton.TabIndex = 6;
+            // 設定檢查資格按鈕的文字為繁體中文，字型大小為 18
+            this.checkButton.Text = "檢查資格";
+            this.checkButton.Font = new System.Drawing.Font("Microsoft JhengHei", 18F);
+            this.checkButton.UseVisualStyleBackColor = true;
+            this.checkButton.Click += new System.EventHandler(this.checkButton_Click);
+            // 
+            // clearButton
+            // 
+            this.clearButton.Location = new System.Drawing.Point(100, 135);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(82, 35);
+            this.clearButton.TabIndex = 7;
+            // 設定清除按鈕的文字為繁體中文，字型大小為 18
+            this.clearButton.Text = "清除";
+            this.clearButton.Font = new System.Drawing.Font("Microsoft JhengHei", 18F);
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(188, 135);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(82, 35);
+            this.exitButton.TabIndex = 8;
+            // 設定離開按鈕的文字為繁體中文，字型大小為 18
+            this.exitButton.Text = "離開";
+            this.exitButton.Font = new System.Drawing.Font("Microsoft JhengHei", 18F);
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(284, 183);
+            // 加入所有元件到表單
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.clearButton);
+            this.Controls.Add(this.checkButton);
+            this.Controls.Add(this.decisionLabel);
+            this.Controls.Add(this.outputDescriptionLabel);
+            this.Controls.Add(this.yearsTextBox);
+            this.Controls.Add(this.salaryTextBox);
+            this.Controls.Add(this.yearsPromptLabel);
+            this.Controls.Add(this.salaryPromptLabel);
+            this.Name = "Form1";
+            // 設定表單標題為繁體中文
+            this.Text = "貸款資格審核";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        // 表單元件宣告區
+        private System.Windows.Forms.Label salaryPromptLabel;      // 年薪標籤
+        private System.Windows.Forms.Label yearsPromptLabel;       // 現職年資標籤
+        private System.Windows.Forms.TextBox salaryTextBox;        // 年薪輸入框
+        private System.Windows.Forms.TextBox yearsTextBox;         // 年資輸入框
+        private System.Windows.Forms.Label outputDescriptionLabel;  // 貸款審核結果說明標籤
+        private System.Windows.Forms.Label decisionLabel;           // 審核結果顯示標籤
+        private System.Windows.Forms.Button checkButton;            // 檢查資格按鈕
+        private System.Windows.Forms.Button clearButton;            // 清除按鈕
+        private System.Windows.Forms.Button exitButton;             // 離開按鈕
+    }
+}
+

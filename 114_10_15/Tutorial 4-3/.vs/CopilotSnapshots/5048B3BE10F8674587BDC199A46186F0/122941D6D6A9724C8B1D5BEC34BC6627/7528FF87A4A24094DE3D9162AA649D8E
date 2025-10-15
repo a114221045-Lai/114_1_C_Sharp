@@ -1,0 +1,83 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Loan_Qualifier
+{
+    public partial class Form1 : Form
+    {
+        // 建構子：初始化表單元件
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        // 檢查資格按鈕事件處理
+        private void checkButton_Click(object sender, EventArgs e)
+        {
+            const decimal MIN_SALARY = 120000m; // 最低年薪
+            const int MIN_YEARS = 2;            // 最低現職年資
+
+            decimal salary; // 儲存使用者輸入的年薪
+            int years;      // 儲存使用者輸入的現職年資
+
+            try
+            {
+                // 嘗試將年薪輸入框內容轉為 decimal 型別
+                salary = decimal.Parse(salaryTextBox.Text);
+                // 嘗試將年資輸入框內容轉為 int 型別
+                years = int.Parse(yearsTextBox.Text);
+
+                // 判斷是否符合貸款資格
+                if (salary >= MIN_SALARY)
+                {
+                    if (years >= MIN_YEARS)
+                    {
+                        // 年薪與年資皆符合資格
+                        decisionLabel.Text = "恭喜！您符合貸款資格。";
+                    }
+                    else
+                    {
+                        // 年薪符合但年資不足
+                        decisionLabel.Text = "年資不足，無法通過貸款審核。";
+                    }
+                }
+                else
+                {
+                    // 年薪不足
+                    decisionLabel.Text = "年薪不足，無法通過貸款審核。";
+                }
+            }
+            catch (Exception)
+            {
+                // 輸入格式錯誤時顯示提示訊息
+                decisionLabel.Text = "請輸入正確的數值格式。";
+            }
+        }
+
+        // 清除按鈕事件處理
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            // 清空年薪、年資輸入框及審核結果標籤
+            salaryTextBox.Text = "";
+            yearsTextBox.Text = "";
+            decisionLabel.Text = "";
+
+            // 將游標焦點設回年薪輸入框
+            salaryTextBox.Focus();
+        }
+
+        // 離開按鈕事件處理
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            // 關閉表單
+            this.Close();
+        }
+    }
+}
