@@ -1,0 +1,11 @@
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\chp2_prob5\chp2_prob5\bin\Debug\chp2_prob5.exe.config
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\chp2_prob5\chp2_prob5\bin\Debug\chp2_prob5.exe
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\chp2_prob5\chp2_prob5\bin\Debug\chp2_prob5.pdb
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\chp2_prob5\chp2_prob5\obj\Debug\chp2_prob5.csproj.AssemblyReference.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\chp2_prob5\chp2_prob5\obj\Debug\chp2_prob5.Form1.resources
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\chp2_prob5\chp2_prob5\obj\Debug\chp2_prob5.Properties.Resources.resources
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\chp2_prob5\chp2_prob5\obj\Debug\chp2_prob5.csproj.GenerateResource.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\chp2_prob5\chp2_prob5\obj\Debug\chp2_prob5.csproj.CoreCompileInputs.cache
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\chp2_prob5\chp2_prob5\obj\Debug\chp2_prob5.exe
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\chp2_prob5\chp2_prob5\obj\Debug\chp2_prob5.pdb
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\chp2_prob5\chp2_prob5\obj\Debug\chp2_prob5.exe.config
