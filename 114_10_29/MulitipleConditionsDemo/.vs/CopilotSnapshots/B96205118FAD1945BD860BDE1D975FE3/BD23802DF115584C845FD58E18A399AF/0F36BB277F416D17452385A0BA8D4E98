@@ -1,0 +1,107 @@
+﻿namespace MulitipleConditionsDemo
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// 設計工具所需的變數。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        // ---------------------------------------------------------------------------
+        // 下列為表單上使用的元件欄位宣告
+        // 1. labelScore   - 顯示「成績：」的標籤
+        // 2. textBoxScore - 讓使用者輸入成績的文字方塊
+        // 3. buttonJudge  - 用來觸發等級判斷的按鈕
+        // 注意：欄位名稱使用英文與駝峰命名，以符合一般 WinForms 程式風格
+        // ---------------------------------------------------------------------------
+        private System.Windows.Forms.Label labelScore;
+        private System.Windows.Forms.TextBox textBoxScore;
+        private System.Windows.Forms.Button buttonJudge;
+
+        /// <summary>
+        /// 清除任何使用中的資源。
+        /// </summary>
+        /// <param name="disposing">如果應該處置受控資源則為 true，否則為 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form 設計工具產生的程式碼
+
+        /// <summary>
+        /// 此為設計工具支援所需的方法 - 請勿使用程式碼編輯器修改
+        /// 這個方法的內容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            // 初始化容器
+            this.components = new System.ComponentModel.Container();
+
+            // 設定表單大小與文字（將表單標題改為繁體中文）
+            // Font 同時也設定成繁體中文字型，方便中文字呈現
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "成績判斷系統"; // 表單標題改為繁體中文
+
+            // -----------------------------------------------------------------
+            // 初始化 labelScore（成績標籤）
+            // - Text: 設為繁體中文「成績：」
+            // - Font: 使用常見的繁體中文字型 Microsoft JhengHei，大小 18
+            // - AutoSize: true 以自動調整寬度
+            // - Location: 放在表單左上方 (20,20)
+            // -----------------------------------------------------------------
+            this.labelScore = new System.Windows.Forms.Label();
+            this.labelScore.AutoSize = true;
+            this.labelScore.Location = new System.Drawing.Point(20, 20);
+            this.labelScore.Name = "labelScore";
+            this.labelScore.Size = new System.Drawing.Size(44, 16);
+            this.labelScore.TabIndex = 0;
+            this.labelScore.Text = "成績："; // 繁體中文文字
+            this.labelScore.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+
+            // -----------------------------------------------------------------
+            // 初始化 textBoxScore（成績輸入框）
+            // - 放置在 labelScore 的右邊，讓使用者輸入成績
+            // - Font 同樣使用繁體中文字型，大小 18，方便顯示較大的字
+            // - Size 設為較寬且較高以配合字型大小
+            // -----------------------------------------------------------------
+            this.textBoxScore = new System.Windows.Forms.TextBox();
+            this.textBoxScore.Location = new System.Drawing.Point(120, 18); // 放在標籤右側
+            this.textBoxScore.Name = "textBoxScore";
+            this.textBoxScore.Size = new System.Drawing.Size(150, 39);
+            this.textBoxScore.TabIndex = 1;
+            this.textBoxScore.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+
+            // -----------------------------------------------------------------
+            // 初始化 buttonJudge（等級判斷按鈕）
+            // - Text: 設為繁體中文「等級判斷」
+            // - Font: 同樣使用繁體中文字型，大小 18
+            // - Location: 放在輸入框下方，按鈕大小較大以利按壓
+            // -----------------------------------------------------------------
+            this.buttonJudge = new System.Windows.Forms.Button();
+            this.buttonJudge.Location = new System.Drawing.Point(20, 80);
+            this.buttonJudge.Name = "buttonJudge";
+            this.buttonJudge.Size = new System.Drawing.Size(120, 45);
+            this.buttonJudge.TabIndex = 2;
+            this.buttonJudge.Text = "等級判斷"; // 繁體中文文字
+            this.buttonJudge.UseVisualStyleBackColor = true;
+            this.buttonJudge.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+
+            // -----------------------------------------------------------------
+            // 將所有已初始化的元件加入至表單的 Controls 集合中
+            // 這樣元件才會顯示在表單上
+            // -----------------------------------------------------------------
+            this.Controls.Add(this.labelScore);
+            this.Controls.Add(this.textBoxScore);
+            this.Controls.Add(this.buttonJudge);
+        }
+
+        #endregion
+    }
+}
+

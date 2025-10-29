@@ -1,0 +1,83 @@
+﻿namespace MulitipleConditionsDemo
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// 設計工具所需的變數。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        // 新增元件欄位
+        private System.Windows.Forms.Label labelScore;
+        private System.Windows.Forms.TextBox textBoxScore;
+        private System.Windows.Forms.Button buttonJudge;
+
+        /// <summary>
+        /// 清除任何使用中的資源。
+        /// </summary>
+        /// <param name="disposing">如果應該處置受控資源則為 true，否則為 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form 設計工具產生的程式碼
+
+        /// <summary>
+        /// 此為設計工具支援所需的方法 - 請勿使用程式碼編輯器修改
+        /// 這個方法的內容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Form1";
+
+            // 
+            // labelScore
+            // 
+            this.labelScore = new System.Windows.Forms.Label();
+            this.labelScore.AutoSize = true;
+            this.labelScore.Location = new System.Drawing.Point(20, 20);
+            this.labelScore.Name = "labelScore";
+            this.labelScore.Size = new System.Drawing.Size(44, 16);
+            this.labelScore.TabIndex = 0;
+            this.labelScore.Text = "成績：";
+
+            // 
+            // textBoxScore
+            // 
+            this.textBoxScore = new System.Windows.Forms.TextBox();
+            this.textBoxScore.Location = new System.Drawing.Point(70, 16);
+            this.textBoxScore.Name = "textBoxScore";
+            this.textBoxScore.Size = new System.Drawing.Size(100, 22);
+            this.textBoxScore.TabIndex = 1;
+
+            // 
+            // buttonJudge
+            // 
+            this.buttonJudge = new System.Windows.Forms.Button();
+            this.buttonJudge.Location = new System.Drawing.Point(20, 60);
+            this.buttonJudge.Name = "buttonJudge";
+            this.buttonJudge.Size = new System.Drawing.Size(100, 30);
+            this.buttonJudge.TabIndex = 2;
+            this.buttonJudge.Text = "等級判斷";
+            this.buttonJudge.UseVisualStyleBackColor = true;
+
+            // 
+            // Form1
+            // 
+            this.Controls.Add(this.labelScore);
+            this.Controls.Add(this.textBoxScore);
+            this.Controls.Add(this.buttonJudge);
+        }
+
+        #endregion
+    }
+}
+
