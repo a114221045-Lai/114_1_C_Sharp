@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Globalization;
 
 namespace chp3_prob4
 {
@@ -22,59 +21,34 @@ namespace chp3_prob4
 
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
-            // 讀取並驗證使用者輸入（允許千分分隔與小數點）
-            var styles = NumberStyles.AllowThousands | NumberStyles.AllowDecimalPoint | NumberStyles.AllowLeadingSign;
-            var culture = CultureInfo.CurrentCulture;
-
-            if (!decimal.TryParse(textBoxTotalIncome.Text.Trim(), styles, culture, out decimal totalIncome))
+            // 讀取並驗證使用者輸入
+            if (!decimal.TryParse(textBoxTotalIncome.Text.Trim(), out decimal totalIncome))
             {
                 MessageBox.Show("請輸入有效的年度總收入數字。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textBoxTotalIncome.Focus();
                 return;
             }
 
-            if (!decimal.TryParse(textBoxStandardDeduction.Text.Trim(), styles, culture, out decimal standardDeduction))
+            if (!decimal.TryParse(textBoxStandardDeduction.Text.Trim(), out decimal standardDeduction))
             {
                 MessageBox.Show("請輸入有效的標準扣除額數字。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textBoxStandardDeduction.Focus();
                 return;
             }
 
-            if (!decimal.TryParse(textBoxOtherExemptions.Text.Trim(), styles, culture, out decimal otherExemptions))
+            if (!decimal.TryParse(textBoxOtherExemptions.Text.Trim(), out decimal otherExemptions))
             {
                 MessageBox.Show("請輸入有效的其他免稅額數字。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textBoxOtherExemptions.Focus();
                 return;
             }
 
-            // 不允許負數輸入
-            if (totalIncome < 0)
-            {
-                MessageBox.Show("年度總收入不得為負數。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                textBoxTotalIncome.Focus();
-                return;
-            }
-
-            if (standardDeduction < 0)
-            {
-                MessageBox.Show("標準扣除額不得為負數。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                textBoxStandardDeduction.Focus();
-                return;
-            }
-
-            if (otherExemptions < 0)
-            {
-                MessageBox.Show("其他免稅額不得為負數。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                textBoxOtherExemptions.Focus();
-                return;
-            }
-
             // 計算淨收入
             decimal netIncome = totalIncome - standardDeduction - otherExemptions;
-            if (netIncome < 0) netIncome = 0m;
+            if (netIncome < 0) netIncome = 0;
 
             // 計算應繳稅額
-            decimal tax = Math.Round(netIncome * TaxRate, 2, MidpointRounding.AwayFromZero);
+            decimal tax = Math.Round(netIncome * TaxRate, 2);
 
             // 顯示結果
             labelResultTotal.Text = $"總收入：{totalIncome:C2}";

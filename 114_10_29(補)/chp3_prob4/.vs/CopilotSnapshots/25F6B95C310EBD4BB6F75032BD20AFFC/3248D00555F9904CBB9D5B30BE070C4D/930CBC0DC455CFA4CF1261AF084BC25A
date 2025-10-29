@@ -40,7 +40,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.labelTotalIncome = new System.Windows.Forms.Label();
             this.textBoxTotalIncome = new System.Windows.Forms.TextBox();
             this.labelStandardDeduction = new System.Windows.Forms.Label();
@@ -155,11 +154,6 @@
             this.Controls.Add(this.labelTotalIncome);
             this.Name = "Form1";
             this.Text = "所得稅計算";
-            // 改善表單屬性
-            this.AcceptButton = this.buttonCalculate;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
             this.ResumeLayout(false);
             this.PerformLayout();
 
