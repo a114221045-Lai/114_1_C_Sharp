@@ -8,3 +8,4 @@ C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\chp3_prob4\chp3_prob4\obj\Deb
 C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\chp3_prob4\chp3_prob4\obj\Debug\chp3_prob4.csproj.CoreCompileInputs.cache
 C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\chp3_prob4\chp3_prob4\obj\Debug\chp3_prob4.exe
 C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\chp3_prob4\chp3_prob4\obj\Debug\chp3_prob4.pdb
+C:\Users\m303\Desktop\114_1_C_Sharp\114_10_29(補)\chp3_prob4\chp3_prob4\obj\Debug\chp3_prob4.exe.config

@@ -1,0 +1,72 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Fuel_Economy_with_TryParse
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+            // 以下以繁體中文詳細註解說明每個步驟：
+            // 宣告用來儲存使用者輸入與計算結果的變數，型別為 double
+            double miles;          // 行駛英里數（使用者輸入）
+            double gallons;        // 使用的汽油量（加侖，使用者輸入）
+            double fuelEconomy;    // 計算出的油耗（英里 / 加侖）
+
+            // 嘗試將 milesTextBox 的文字解析為 double，若失敗則顯示錯誤訊息並離開方法
+            // 使用 double.TryParse 可以避免於輸入不合法時拋出例外
+            if (!double.TryParse(milesTextBox.Text, out miles))
+            {
+                // 解析失敗：提醒使用者輸入正確的數字（繁體中文提示）
+                MessageBox.Show("請在「行駛里程」欄位輸入有效的數字。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                milesTextBox.Focus(); // 將焦點移回該文字方塊以利使用者修正
+                return;
+            }
+
+            // 嘗試將 gallonsTextBox 的文字解析為 double，若失敗則顯示錯誤訊息並離開方法
+            if (!double.TryParse(gallonsTextBox.Text, out gallons))
+            {
+                // 解析失敗：提醒使用者輸入正確的數字（繁體中文提示）
+                MessageBox.Show("請在「使用的汽油量（加侖）」欄位輸入有效的數字。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                gallonsTextBox.Focus();
+                return;
+            }
+
+            // 檢查加侖數是否為零或負值，避免除以零或不合理的結果
+            if (gallons <= 0)
+            {
+                MessageBox.Show("使用的汽油量必須為大於零的數字。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                gallonsTextBox.Focus();
+                return;
+            }
+
+            // 執行油耗計算（英里 / 加侖）並將結果格式化為小數點後兩位
+            fuelEconomy = miles / gallons;
+
+            // 將計算結果顯示在介面上的 mpgLabel，並加上單位說明（繁體中文）
+            // 使用 ToString("N2") 以千位分隔符與 2 位小數呈現
+            mpgLabel.Text = string.Format("{0:N2} 英里/加侖", fuelEconomy);
+
+            // 可選：將游標移至離開按鈕以提示使用者已完成計算
+            // this.exitButton.Focus();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            // 關閉表單（釋放資源並結束應用程式視窗）
+            this.Close();
+        }
+    }
+}

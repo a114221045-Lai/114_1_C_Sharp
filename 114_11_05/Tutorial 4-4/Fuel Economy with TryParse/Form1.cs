@@ -1,0 +1,66 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Fuel_Economy_with_TryParse
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+            // 以下以繁體中文詳細註解說明每個步驟：
+            // 宣告用來儲存使用者輸入與計算結果的變數，型別為 double
+            double kms;          // 行駛英里數（使用者輸入）
+            double litters;        // 使用的汽油量（使用者輸入）
+            double fuelEconomy;    // 計算出的油耗
+
+            // 嘗試將 kmsTextBox 的文字解析為 double，若成功則進行下一步檢查與計算
+            // 使用 double.TryParse 可以避免於輸入不合法時拋出例外
+            if (double.TryParse(kmsTextBox.Text, out kms))
+            {
+                if (double.TryParse(littersTextBox.Text, out litters))
+                {
+                    // 確保加侖／公升不是零，避免除以零例外
+                    if (litters == 0)
+                    {
+                        MessageBox.Show("公升數不能為零。");
+                        return;
+                    }
+
+                    // 計算油耗（公里 / 公升）
+                    fuelEconomy = kms / litters;
+                    // 將計算結果格式化為字串並顯示在 mpgLabel 上，保留兩位小數
+                    mpgLabel.Text = fuelEconomy.ToString("n2") + " 公里/公升";
+                }
+                else
+                {
+                    // 顯示錯誤訊息，提示使用者輸入有效的數字
+                    MessageBox.Show("請輸入有效的公升數值。");
+                }
+            }
+            else
+            {
+                // 顯示錯誤訊息，提示使用者輸入有效的數字
+                MessageBox.Show("請輸入有效的公里數值。\n範例：123.45");
+
+            }
+        }
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            // 關閉表單（釋放資源並結束應用程式視窗）
+            this.Close();
+        }
+        
+    }
+}
