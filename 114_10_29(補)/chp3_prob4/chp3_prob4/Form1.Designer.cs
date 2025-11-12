@@ -31,17 +31,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.annualtotal_incomeTextBox = new System.Windows.Forms.TextBox();
+            this.standard_deductionTextBox = new System.Windows.Forms.TextBox();
+            this.other_exemptionsTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.total_incomeLabel = new System.Windows.Forms.Label();
+            this.net_incomeLabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.taxable_incomeLabel = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.calculateButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -74,29 +74,29 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "其他免稅額";
             // 
-            // textBox1
+            // annualtotal_incomeTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox1.Location = new System.Drawing.Point(475, 86);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 65);
-            this.textBox1.TabIndex = 3;
+            this.annualtotal_incomeTextBox.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.annualtotal_incomeTextBox.Location = new System.Drawing.Point(475, 86);
+            this.annualtotal_incomeTextBox.Name = "annualtotal_incomeTextBox";
+            this.annualtotal_incomeTextBox.Size = new System.Drawing.Size(201, 65);
+            this.annualtotal_incomeTextBox.TabIndex = 3;
             // 
-            // textBox2
+            // standard_deductionTextBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox2.Location = new System.Drawing.Point(475, 169);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(201, 65);
-            this.textBox2.TabIndex = 4;
+            this.standard_deductionTextBox.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.standard_deductionTextBox.Location = new System.Drawing.Point(475, 169);
+            this.standard_deductionTextBox.Name = "standard_deductionTextBox";
+            this.standard_deductionTextBox.Size = new System.Drawing.Size(201, 65);
+            this.standard_deductionTextBox.TabIndex = 4;
             // 
-            // textBox3
+            // other_exemptionsTextBox
             // 
-            this.textBox3.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox3.Location = new System.Drawing.Point(475, 247);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(201, 65);
-            this.textBox3.TabIndex = 5;
+            this.other_exemptionsTextBox.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.other_exemptionsTextBox.Location = new System.Drawing.Point(475, 247);
+            this.other_exemptionsTextBox.Name = "other_exemptionsTextBox";
+            this.other_exemptionsTextBox.Size = new System.Drawing.Size(201, 65);
+            this.other_exemptionsTextBox.TabIndex = 5;
             // 
             // label4
             // 
@@ -108,23 +108,23 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "總收入";
             // 
-            // label5
+            // total_incomeLabel
             // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label5.Location = new System.Drawing.Point(475, 382);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(270, 61);
-            this.label5.TabIndex = 7;
+            this.total_incomeLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.total_incomeLabel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.total_incomeLabel.Location = new System.Drawing.Point(475, 382);
+            this.total_incomeLabel.Name = "total_incomeLabel";
+            this.total_incomeLabel.Size = new System.Drawing.Size(270, 61);
+            this.total_incomeLabel.TabIndex = 7;
             // 
-            // label6
+            // net_incomeLabel
             // 
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label6.Location = new System.Drawing.Point(475, 464);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(270, 61);
-            this.label6.TabIndex = 9;
+            this.net_incomeLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.net_incomeLabel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.net_incomeLabel.Location = new System.Drawing.Point(475, 464);
+            this.net_incomeLabel.Name = "net_incomeLabel";
+            this.net_incomeLabel.Size = new System.Drawing.Size(270, 61);
+            this.net_incomeLabel.TabIndex = 9;
             // 
             // label7
             // 
@@ -136,14 +136,14 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "淨收入";
             // 
-            // label8
+            // taxable_incomeLabel
             // 
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label8.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label8.Location = new System.Drawing.Point(475, 542);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(270, 61);
-            this.label8.TabIndex = 11;
+            this.taxable_incomeLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.taxable_incomeLabel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.taxable_incomeLabel.Location = new System.Drawing.Point(475, 542);
+            this.taxable_incomeLabel.Name = "taxable_incomeLabel";
+            this.taxable_incomeLabel.Size = new System.Drawing.Size(270, 61);
+            this.taxable_incomeLabel.TabIndex = 11;
             // 
             // label9
             // 
@@ -155,44 +155,44 @@
             this.label9.TabIndex = 10;
             this.label9.Text = "應繳所得稅";
             // 
-            // button1
+            // calculateButton
             // 
-            this.button1.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(89, 687);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(202, 64);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "計算";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.calculateButton.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.calculateButton.Location = new System.Drawing.Point(89, 687);
+            this.calculateButton.Name = "calculateButton";
+            this.calculateButton.Size = new System.Drawing.Size(202, 64);
+            this.calculateButton.TabIndex = 12;
+            this.calculateButton.Text = "計算";
+            this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
-            // button2
+            // exitButton
             // 
-            this.button2.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.Location = new System.Drawing.Point(513, 687);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(202, 64);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "離開";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.exitButton.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.exitButton.Location = new System.Drawing.Point(513, 687);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(202, 64);
+            this.exitButton.TabIndex = 13;
+            this.exitButton.Text = "離開";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(868, 787);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.calculateButton);
+            this.Controls.Add(this.taxable_incomeLabel);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.net_incomeLabel);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.total_incomeLabel);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.other_exemptionsTextBox);
+            this.Controls.Add(this.standard_deductionTextBox);
+            this.Controls.Add(this.annualtotal_incomeTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -208,17 +208,17 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox annualtotal_incomeTextBox;
+        private System.Windows.Forms.TextBox standard_deductionTextBox;
+        private System.Windows.Forms.TextBox other_exemptionsTextBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label total_incomeLabel;
+        private System.Windows.Forms.Label net_incomeLabel;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label taxable_incomeLabel;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.Button exitButton;
     }
 }
 

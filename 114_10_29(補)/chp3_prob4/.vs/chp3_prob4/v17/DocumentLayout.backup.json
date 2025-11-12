@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{20C7B26D-4A58-4D3F-A97C-67AB76600D27}|chp3_prob4\\chp3_prob4.csproj|solutionrelative:chp3_prob4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20C7B26D-4A58-4D3F-A97C-67AB76600D27}|chp3_prob4\\chp3_prob4.csproj|c:\\users\\m303\\desktop\\114_1_c_sharp\\114_10_29(\u88DC)\\chp3_prob4\\chp3_prob4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{20C7B26D-4A58-4D3F-A97C-67AB76600D27}|chp3_prob4\\chp3_prob4.csproj|C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_10_29(\u88DC)\\chp3_prob4\\chp3_prob4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{20C7B26D-4A58-4D3F-A97C-67AB76600D27}|chp3_prob4\\chp3_prob4.csproj|solutionrelative:chp3_prob4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -22,20 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_10_29(\u88DC)\\chp3_prob4\\chp3_prob4\\Form1.cs",
-              "RelativeDocumentMoniker": "chp3_prob4\\Form1.cs",
-              "ToolTip": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_10_29(\u88DC)\\chp3_prob4\\chp3_prob4\\Form1.cs",
-              "RelativeToolTip": "chp3_prob4\\Form1.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAswBcAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T03:57:51.17Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -48,6 +39,19 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-05T02:40:50.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_10_29(\u88DC)\\chp3_prob4\\chp3_prob4\\Form1.cs",
+              "RelativeDocumentMoniker": "chp3_prob4\\Form1.cs",
+              "ToolTip": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_10_29(\u88DC)\\chp3_prob4\\chp3_prob4\\Form1.cs",
+              "RelativeToolTip": "chp3_prob4\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T03:57:51.17Z",
               "EditorCaption": ""
             },
             {
