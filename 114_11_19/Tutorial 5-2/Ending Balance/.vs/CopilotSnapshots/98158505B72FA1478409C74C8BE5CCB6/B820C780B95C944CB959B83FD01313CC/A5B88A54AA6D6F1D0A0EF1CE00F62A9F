@@ -1,0 +1,91 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Ending_Balance
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+            // 以下以繁體中文詳細註解每一個步驟，並實作計算邏輯：
+            // 程式預設每月利率為 1%（可依需求調整），對輸入的起始餘額每個月計算利息並累計到結餘。
+
+            // 每月利率（範例採 1%）
+            const decimal MONTHLY_RATE = 0.01m;
+
+            // 宣告變數：balance 儲存目前結餘，months 儲存輸入的月份數
+            decimal balance;
+            int months;
+
+            // 先清除明細清單，避免上次結果干擾
+            detailListBox.Items.Clear();
+
+            // 驗證並解析起始餘額的輸入（使用 TryParse 避免例外）
+            if (!decimal.TryParse(startingBalTextBox.Text.Trim(), out balance))
+            {
+                // 如果解析失敗，提示使用者並將焦點設回輸入框
+                MessageBox.Show("請輸入有效的起始餘額。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                startingBalTextBox.Focus();
+                return;
+            }
+
+            // 驗證並解析月份輸入，且月份至少為 1
+            if (!int.TryParse(monthsTextBox.Text.Trim(), out months) || months < 1)
+            {
+                MessageBox.Show("請輸入有效的月份數（至少 1）。", "輸入錯誤", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                monthsTextBox.Focus();
+                return;
+            }
+
+            // 執行逐月計算：每月先計算利息再將利息加入結餘，並將每月結果輸出到 ListBox
+            for (int month = 1; month <= months; month++)
+            {
+                // 計算當月利息，四捨五入到小數第二位（分）
+                decimal interest = Math.Round(balance * MONTHLY_RATE, 2);
+
+                // 將利息加入目前結餘
+                balance += interest;
+
+                // 將該月利息與新的結餘加入明細清單，使用系統貨幣格式顯示
+                string detail = string.Format("第{0}月：利息 {1}，結餘 {2}",
+                    month, interest.ToString("C2"), balance.ToString("C2"));
+
+                detailListBox.Items.Add(detail);
+            }
+
+            // 計算結束後，顯示最終結餘於標籤（以貨幣格式）
+            endingBalanceLabel.Text = balance.ToString("C2");
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            // Clear the TextBoxes, the endingBalanceLabel control,
+            // and the ListBox.
+            startingBalTextBox.Text = "";
+            monthsTextBox.Text = "";
+            endingBalanceLabel.Text = "";
+            detailListBox.Items.Clear();
+
+            // Reset the focus.
+            startingBalTextBox.Focus();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            // Close the form.
+            this.Close();
+        }
+    }
+}

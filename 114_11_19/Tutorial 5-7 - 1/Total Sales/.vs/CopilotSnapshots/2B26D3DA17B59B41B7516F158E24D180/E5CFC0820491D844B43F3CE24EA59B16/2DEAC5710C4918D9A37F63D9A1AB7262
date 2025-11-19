@@ -1,0 +1,106 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.IO;
+
+namespace Total_Sales
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+            // 計算按鈕點擊事件處理
+            try
+            {
+                // 讀取銷售數據並計算總銷售額
+                decimal sales;
+                decimal total = 0;
+
+                // 範例過濾條件（可改為由 UI 輸入）
+                decimal minAllowed = 0.01m;      // 只接受大於 0 的銷售額
+                decimal minThreshold = 100m;     // 只顯示/累加 >= 100 的項目（示範）
+                decimal maxAllowed = 100000m;    // 排除非常大的異常值
+
+                // 打開文件
+                StreamReader inputFile;
+
+                // 假設銷售數據存儲在 Sales.txt 文件中，每行一個銷售額
+                inputFile = File.OpenText("Sales.txt");
+
+                // 清空列表（避免重複）
+                listBox1.Items.Clear();
+
+                // 讀取數據並計算總和
+                while (!inputFile.EndOfStream)
+                {
+                    string line = inputFile.ReadLine();
+
+                    // 跳過空行
+                    if (string.IsNullOrWhiteSpace(line))
+                        continue;
+
+                    // 使用 TryParse 安全解析數值，避免格式不正確導致例外
+                    if (!decimal.TryParse(line, out sales))
+                    {
+                        // 若解析失敗，可選擇記錄或顯示警告後跳過
+                        listBox1.Items.Add("無效資料: " + line);
+                        continue;
+                    }
+
+                    // 組合多個條件來過濾銷售額：
+                    // - 必須為正數且不小於 minAllowed
+                    // - 同時不得超過 maxAllowed（排除異常）
+                    // - 並且只有 >= minThreshold 的項目才會被顯示與累加（此條件可視需求調整）
+                    if (sales >= minAllowed && sales <= maxAllowed && sales >= minThreshold)
+                    {
+                        // 符合所有條件，累加並顯示
+                        total += sales;
+                        listBox1.Items.Add(sales.ToString("C"));
+                    }
+                    else
+                    {
+                        // 不符合條件時的處理（可選）
+                        // 範例：把被過濾掉的資料也列出並標註原因
+                        if (sales < minAllowed)
+                            listBox1.Items.Add($"已過濾(非正數): {sales.ToString("C")}");
+                        else if (sales > maxAllowed)
+                            listBox1.Items.Add($"已過濾(異常值): {sales.ToString("C")}");
+                        else if (sales < minThreshold)
+                            listBox1.Items.Add($"已過濾(低於閾值): {sales.ToString("C")}");
+                    }
+                }
+
+                // 關閉文件
+                inputFile.Close();
+
+                // 顯示總銷售額
+                totalLabel.Text = total.ToString("C");
+
+                // 顯示總計於列表尾
+                listBox1.Items.Add("總銷售額: " + total.ToString("C"));
+            }
+            catch (Exception ex)
+            {
+                // 顯示錯誤信息
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            // 關閉表單
+            this.Close();
+        }
+    }
+}

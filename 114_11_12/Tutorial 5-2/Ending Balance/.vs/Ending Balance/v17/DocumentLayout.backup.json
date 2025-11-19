@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_11_12\\Tutorial 5-2\\Ending Balance\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CE3FCE43-183A-4464-B2F1-5EBCEE4484E3}|Ending Balance\\Ending Balance.csproj|C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_11_12\\Tutorial 5-2\\Ending Balance\\ending balance\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CE3FCE43-183A-4464-B2F1-5EBCEE4484E3}|Ending Balance\\Ending Balance.csproj|c:\\users\\m303\\desktop\\114_1_c_sharp\\114_11_12\\tutorial 5-2\\ending balance\\ending balance\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CE3FCE43-183A-4464-B2F1-5EBCEE4484E3}|Ending Balance\\Ending Balance.csproj|solutionrelative:ending balance\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE3FCE43-183A-4464-B2F1-5EBCEE4484E3}|Ending Balance\\Ending Balance.csproj|c:\\users\\m303\\desktop\\114_1_c_sharp\\114_11_12\\tutorial 5-2\\ending balance\\ending balance\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CE3FCE43-183A-4464-B2F1-5EBCEE4484E3}|Ending Balance\\Ending Balance.csproj|C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_11_12\\Tutorial 5-2\\Ending Balance\\ending balance\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE3FCE43-183A-4464-B2F1-5EBCEE4484E3}|Ending Balance\\Ending Balance.csproj|solutionrelative:ending balance\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -22,12 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
@@ -38,9 +34,9 @@
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_11_12\\Tutorial 5-2\\Ending Balance\\Ending Balance\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Ending Balance\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_11_12\\Tutorial 5-2\\Ending Balance\\Ending Balance\\Form1.Designer.cs*",
-              "RelativeToolTip": "Ending Balance\\Form1.Designer.cs*",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAWwLsAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_11_12\\Tutorial 5-2\\Ending Balance\\Ending Balance\\Form1.Designer.cs",
+              "RelativeToolTip": "Ending Balance\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T06:27:09.949Z",
               "EditorCaption": ""
@@ -51,8 +47,8 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_11_12\\Tutorial 5-2\\Ending Balance\\Ending Balance\\Form1.cs",
               "RelativeDocumentMoniker": "Ending Balance\\Form1.cs",
-              "ToolTip": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_11_12\\Tutorial 5-2\\Ending Balance\\Ending Balance\\Form1.cs*",
-              "RelativeToolTip": "Ending Balance\\Form1.cs*",
+              "ToolTip": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_11_12\\Tutorial 5-2\\Ending Balance\\Ending Balance\\Form1.cs",
+              "RelativeToolTip": "Ending Balance\\Form1.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T06:24:42.673Z",
@@ -64,8 +60,8 @@
               "Title": "Form1.cs [\u8A2D\u8A08]",
               "DocumentMoniker": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_11_12\\Tutorial 5-2\\Ending Balance\\Ending Balance\\Form1.cs",
               "RelativeDocumentMoniker": "Ending Balance\\Form1.cs",
-              "ToolTip": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_11_12\\Tutorial 5-2\\Ending Balance\\Ending Balance\\Form1.cs [\u8A2D\u8A08]*",
-              "RelativeToolTip": "Ending Balance\\Form1.cs [\u8A2D\u8A08]*",
+              "ToolTip": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_11_12\\Tutorial 5-2\\Ending Balance\\Ending Balance\\Form1.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "Ending Balance\\Form1.cs [\u8A2D\u8A08]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T06:24:37.358Z",
               "EditorCaption": " [\u8A2D\u8A08]"

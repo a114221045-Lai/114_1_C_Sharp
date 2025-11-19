@@ -29,64 +29,55 @@
         private void InitializeComponent()
         {
             this.totalLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Resetbutton = new System.Windows.Forms.Button();
+            this.resetbutton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.totalCalories = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // totalLabel
             // 
             this.totalLabel.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.totalLabel.Location = new System.Drawing.Point(807, 33);
+            this.totalLabel.Location = new System.Drawing.Point(847, 51);
             this.totalLabel.Name = "totalLabel";
             this.totalLabel.Size = new System.Drawing.Size(219, 57);
             this.totalLabel.TabIndex = 1;
             this.totalLabel.Text = "總卡路里";
             this.totalLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // resetbutton
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(807, 103);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 57);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "0";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Resetbutton
-            // 
-            this.Resetbutton.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Resetbutton.Location = new System.Drawing.Point(840, 623);
-            this.Resetbutton.Name = "Resetbutton";
-            this.Resetbutton.Size = new System.Drawing.Size(162, 57);
-            this.Resetbutton.TabIndex = 3;
-            this.Resetbutton.Text = "重置";
-            this.Resetbutton.UseVisualStyleBackColor = true;
+            this.resetbutton.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.resetbutton.Location = new System.Drawing.Point(855, 631);
+            this.resetbutton.Name = "resetbutton";
+            this.resetbutton.Size = new System.Drawing.Size(196, 57);
+            this.resetbutton.TabIndex = 3;
+            this.resetbutton.Text = "重置";
+            this.resetbutton.UseVisualStyleBackColor = true;
+            this.resetbutton.Click += new System.EventHandler(this.resetbutton_Click);
             // 
             // exitButton
             // 
             this.exitButton.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.exitButton.Location = new System.Drawing.Point(840, 695);
+            this.exitButton.Location = new System.Drawing.Point(855, 703);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(162, 59);
+            this.exitButton.Size = new System.Drawing.Size(196, 59);
             this.exitButton.TabIndex = 4;
             this.exitButton.Text = "離開";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // label2
             // 
@@ -95,17 +86,6 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(738, 721);
             this.label2.TabIndex = 5;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox1.Image = global::chp3_prob10.Properties.Resources.Banana;
-            this.pictureBox1.Location = new System.Drawing.Point(109, 51);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(277, 274);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -128,19 +108,8 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(275, 67);
             this.label4.TabIndex = 9;
-            this.label4.Text = "115卡路里";
+            this.label4.Text = "80卡路里";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox2.Image = global::chp3_prob10.Properties.Resources.Banana;
-            this.pictureBox2.Location = new System.Drawing.Point(430, 51);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(277, 274);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
             // 
             // label5
             // 
@@ -151,19 +120,8 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(275, 67);
             this.label5.TabIndex = 11;
-            this.label5.Text = "115卡路里";
+            this.label5.Text = "90卡路里";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox3.Image = global::chp3_prob10.Properties.Resources.Banana;
-            this.pictureBox3.Location = new System.Drawing.Point(109, 396);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(277, 274);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
             // 
             // label6
             // 
@@ -174,25 +132,73 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(275, 67);
             this.label6.TabIndex = 13;
-            this.label6.Text = "115卡路里";
+            this.label6.Text = "120卡路里";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox4.Image = global::chp3_prob10.Properties.Resources.Banana;
+            this.pictureBox4.Image = global::chp3_prob10.Properties.Resources.Pear;
             this.pictureBox4.Location = new System.Drawing.Point(430, 396);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(277, 274);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox3.Image = global::chp3_prob10.Properties.Resources.Orange;
+            this.pictureBox3.Location = new System.Drawing.Point(109, 396);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(277, 274);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox2.Image = global::chp3_prob10.Properties.Resources.Apple;
+            this.pictureBox2.Location = new System.Drawing.Point(430, 51);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(277, 274);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox1.Image = global::chp3_prob10.Properties.Resources.Banana;
+            this.pictureBox1.Location = new System.Drawing.Point(109, 51);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(277, 274);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // totalCalories
+            // 
+            this.totalCalories.Font = new System.Drawing.Font("新細明體", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.totalCalories.Location = new System.Drawing.Point(807, 118);
+            this.totalCalories.Name = "totalCalories";
+            this.totalCalories.Size = new System.Drawing.Size(292, 65);
+            this.totalCalories.TabIndex = 14;
+            this.totalCalories.Text = "0";
+            this.totalCalories.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1070, 834);
+            this.ClientSize = new System.Drawing.Size(1133, 834);
+            this.Controls.Add(this.totalCalories);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label5);
@@ -203,23 +209,22 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.exitButton);
-            this.Controls.Add(this.Resetbutton);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.resetbutton);
             this.Controls.Add(this.totalLabel);
             this.Name = "Form1";
-            this.Text = "計算卡路里";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.Text = "卡路里計算器";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Label totalLabel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Resetbutton;
+        private System.Windows.Forms.Button resetbutton;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -230,6 +235,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.TextBox totalCalories;
     }
 }
 
