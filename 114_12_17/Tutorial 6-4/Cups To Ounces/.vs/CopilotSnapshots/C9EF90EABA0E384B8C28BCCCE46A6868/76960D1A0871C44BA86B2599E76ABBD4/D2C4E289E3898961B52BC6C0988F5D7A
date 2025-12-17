@@ -1,0 +1,148 @@
+﻿namespace Cups_To_Ounces
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// 需要的設計工具變數
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 清理所有使用中的資源
+        /// </summary>
+        /// <param name="disposing">如果託管資源應被直接儲存則為 true；否則為 false</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// 設計工具支援所需的方法 - 請勿使用程式碼編輯器修改
+        /// 此方法的內容
+        /// </summary>
+        private void InitializeComponent()
+        {
+            // 初始化所有UI元件
+            this.bannerLabel = new System.Windows.Forms.Label();
+            this.cupsPromptLabel = new System.Windows.Forms.Label();
+            this.cupsTextBox = new System.Windows.Forms.TextBox();
+            this.ouncesLabel = new System.Windows.Forms.Label();
+            this.outputDescriptionLabel = new System.Windows.Forms.Label();
+            this.convertButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // bannerLabel - 標題標籤，顯示應用程式標題
+            // 
+            this.bannerLabel.AutoSize = true;
+            this.bannerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bannerLabel.Location = new System.Drawing.Point(20, 15);
+            this.bannerLabel.Name = "bannerLabel";
+            this.bannerLabel.Size = new System.Drawing.Size(280, 29);
+            this.bannerLabel.TabIndex = 0;
+            this.bannerLabel.Text = "杯子轉流體盎司轉換器";
+            // 
+            // cupsPromptLabel - 杯子輸入提示標籤
+            // 
+            this.cupsPromptLabel.AutoSize = true;
+            this.cupsPromptLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cupsPromptLabel.Location = new System.Drawing.Point(20, 70);
+            this.cupsPromptLabel.Name = "cupsPromptLabel";
+            this.cupsPromptLabel.Size = new System.Drawing.Size(70, 29);
+            this.cupsPromptLabel.TabIndex = 1;
+            this.cupsPromptLabel.Text = "杯子：";
+            // 
+            // cupsTextBox - 使用者輸入杯子數量的文字框
+            // 
+            this.cupsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.cupsTextBox.Location = new System.Drawing.Point(100, 65);
+            this.cupsTextBox.Name = "cupsTextBox";
+            this.cupsTextBox.Size = new System.Drawing.Size(150, 35);
+            this.cupsTextBox.TabIndex = 2;
+            // 
+            // ouncesLabel - 顯示轉換結果（流體盎司）的標籤
+            // 
+            this.ouncesLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ouncesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.ouncesLabel.Location = new System.Drawing.Point(100, 130);
+            this.ouncesLabel.Name = "ouncesLabel";
+            this.ouncesLabel.Size = new System.Drawing.Size(150, 40);
+            this.ouncesLabel.TabIndex = 3;
+            this.ouncesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // outputDescriptionLabel - 流體盎司輸出說明標籤
+            // 
+            this.outputDescriptionLabel.AutoSize = true;
+            this.outputDescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.outputDescriptionLabel.Location = new System.Drawing.Point(20, 135);
+            this.outputDescriptionLabel.Name = "outputDescriptionLabel";
+            this.outputDescriptionLabel.Size = new System.Drawing.Size(100, 29);
+            this.outputDescriptionLabel.TabIndex = 4;
+            this.outputDescriptionLabel.Text = "流體盎司：";
+            // 
+            // convertButton - 轉換按鈕，用於執行杯子到盎司的轉換
+            // 
+            this.convertButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.convertButton.Location = new System.Drawing.Point(40, 195);
+            this.convertButton.Name = "convertButton";
+            this.convertButton.Size = new System.Drawing.Size(110, 45);
+            this.convertButton.TabIndex = 5;
+            this.convertButton.Text = "轉換";
+            this.convertButton.UseVisualStyleBackColor = true;
+            this.convertButton.Click += new System.EventHandler(this.convertButton_Click);
+            // 
+            // exitButton - 退出按鈕，用於關閉應用程式
+            // 
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.exitButton.Location = new System.Drawing.Point(160, 195);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(110, 45);
+            this.exitButton.TabIndex = 6;
+            this.exitButton.Text = "結束";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // Form1 - 主表單設定
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(320, 260);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.convertButton);
+            this.Controls.Add(this.outputDescriptionLabel);
+            this.Controls.Add(this.ouncesLabel);
+            this.Controls.Add(this.cupsTextBox);
+            this.Controls.Add(this.cupsPromptLabel);
+            this.Controls.Add(this.bannerLabel);
+            this.Name = "Form1";
+            this.Text = "杯子轉流體盎司";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        // 標籤控制項 - 用於顯示標題
+        private System.Windows.Forms.Label bannerLabel;
+        // 標籤控制項 - 用於提示使用者輸入杯子數量
+        private System.Windows.Forms.Label cupsPromptLabel;
+        // 文字框控制項 - 讓使用者輸入杯子數量
+        private System.Windows.Forms.TextBox cupsTextBox;
+        // 標籤控制項 - 用於顯示轉換後的流體盎司結果
+        private System.Windows.Forms.Label ouncesLabel;
+        // 標籤控制項 - 用於說明輸出結果的含義
+        private System.Windows.Forms.Label outputDescriptionLabel;
+        // 按鈕控制項 - 執行轉換計算
+        private System.Windows.Forms.Button convertButton;
+        // 按鈕控制項 - 關閉應用程式
+        private System.Windows.Forms.Button exitButton;
+    }
+}
+

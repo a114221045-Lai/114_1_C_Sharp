@@ -1,0 +1,38 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Cups_To_Ounces
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        // CupsToOunces 方法接受杯子數量作為參數
+        // 並返回等效的流體盎司數量
+        // 轉換公式：1杯 = 8流體盎司
+     
+
+        private void convertButton_Click(object sender, EventArgs e)
+        {
+            // 轉換按鈕點擊事件處理程序
+            // 此方法在使用者點擊"轉換"按鈕時被調用
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            // 結束按鈕點擊事件處理程序
+            // 關閉表單並結束應用程式
+            this.Close();
+        }
+    }
+}

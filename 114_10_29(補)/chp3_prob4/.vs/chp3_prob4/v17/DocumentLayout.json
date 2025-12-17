@@ -22,12 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -38,8 +34,7 @@
               "RelativeToolTip": "chp3_prob4\\Form1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T02:40:50.938Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T02:40:50.938Z"
             },
             {
               "$type": "Document",
@@ -49,7 +44,7 @@
               "RelativeDocumentMoniker": "chp3_prob4\\Form1.cs",
               "ToolTip": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_10_29(\u88DC)\\chp3_prob4\\chp3_prob4\\Form1.cs",
               "RelativeToolTip": "chp3_prob4\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAIwBgAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-05T03:57:51.17Z",
               "EditorCaption": ""
@@ -63,8 +58,7 @@
               "ToolTip": "C:\\Users\\m303\\Desktop\\114_1_C_Sharp\\114_10_29(\u88DC)\\chp3_prob4\\chp3_prob4\\Form1.cs [\u8A2D\u8A08]",
               "RelativeToolTip": "chp3_prob4\\Form1.cs [\u8A2D\u8A08]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T02:40:08.412Z",
-              "EditorCaption": " [\u8A2D\u8A08]"
+              "WhenOpened": "2025-11-05T02:40:08.412Z"
             }
           ]
         }
