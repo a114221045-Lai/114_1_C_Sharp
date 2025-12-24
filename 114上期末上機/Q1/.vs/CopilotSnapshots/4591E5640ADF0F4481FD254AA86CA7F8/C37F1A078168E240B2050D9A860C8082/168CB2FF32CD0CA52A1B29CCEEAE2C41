@@ -1,0 +1,107 @@
+﻿using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace Q1
+{
+    public partial class Form1 : Form
+    {
+        // 遊戲狀態
+        private readonly Random _rng = new Random();
+        private int _playerWins = 0;
+        private int _cpuWins = 0;
+
+        private enum Hand
+        {
+            石頭 = 0,
+            布 = 1,
+            剪刀 = 2
+        }
+
+        public Form1()
+        {
+            InitializeComponent();
+            // 初始化 UI 狀態
+            txtResult.ReadOnly = true;
+            txtResult.TextAlign = HorizontalAlignment.Center;
+            UpdateEmoji(lblCpuEmoji, null);
+            UpdateEmoji(lblPlayerEmoji, null);
+        }
+
+        private void btnRock_Click(object sender, EventArgs e)
+        {
+            PlayRound(Hand.石頭);
+        }
+
+        private void btnPaper_Click(object sender, EventArgs e)
+        {
+            PlayRound(Hand.布);
+        }
+
+        private void btnScissors_Click(object sender, EventArgs e)
+        {
+            PlayRound(Hand.剪刀);
+        }
+
+        private void btnEnd_Click(object sender, EventArgs e)
+        {
+            // 顯示統計
+            MessageBox.Show($"遊戲結果！\n\n玩家贏了{_playerWins}次\n電腦贏了{_cpuWins}次", "遊戲統計", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void PlayRound(Hand player)
+        {
+            // 電腦隨機
+            var cpu = (Hand)_rng.Next(0, 3);
+
+            // 更新表情
+            UpdateEmoji(lblPlayerEmoji, player);
+            UpdateEmoji(lblCpuEmoji, cpu);
+
+            // 判定勝負
+            var result = Judge(player, cpu);
+            switch (result)
+            {
+                case 1:
+                    _playerWins++;
+                    txtResult.Text = "玩家贏";
+                    break;
+                case -1:
+                    _cpuWins++;
+                    txtResult.Text = "電腦贏";
+                    break;
+                default:
+                    txtResult.Text = "平手";
+                    break;
+            }
+        }
+
+        // 回傳: 玩家贏=1、電腦贏=-1、平手=0
+        private int Judge(Hand player, Hand cpu)
+        {
+            if (player == cpu) return 0;
+            // 石頭(0) 贏 剪刀(2)
+            // 布(1)   贏 石頭(0)
+            // 剪刀(2) 贏 布(1)
+            if ((player == Hand.石頭 && cpu == Hand.剪刀) ||
+                (player == Hand.布 && cpu == Hand.石頭) ||
+                (player == Hand.剪刀 && cpu == Hand.布))
+            {
+                return 1;
+            }
+            return -1;
+        }
+
+        // 使用 Emoji 顯示拳、掌、剪刀
+        private void UpdateEmoji(Label label, Hand? hand)
+        {
+            label.Text = hand switch
+            {
+                Hand.石頭 => "✊",
+                Hand.布 => "✋",
+                Hand.剪刀 => "✌",
+                _ => string.Empty
+            };
+        }
+    }
+}

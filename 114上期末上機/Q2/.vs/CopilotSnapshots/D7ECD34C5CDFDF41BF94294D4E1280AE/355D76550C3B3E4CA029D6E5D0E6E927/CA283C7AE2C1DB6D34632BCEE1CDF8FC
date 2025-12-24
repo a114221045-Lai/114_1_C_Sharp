@@ -1,0 +1,410 @@
+﻿namespace Q2
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// 設計工具所需的變數。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 清除任何使用中的資源。
+        /// </summary>
+        /// <param name="disposing">如果應該處置受控資源則為 true，否則為 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form 設計工具產生的程式碼
+
+        /// <summary>
+        /// 此為設計工具支援所需的方法 - 請勿使用程式碼編輯器修改
+        /// 這個方法的內容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.gbOilLube = new System.Windows.Forms.GroupBox();
+            this.cbLube = new System.Windows.Forms.CheckBox();
+            this.cbOil = new System.Windows.Forms.CheckBox();
+            this.gbFlush = new System.Windows.Forms.GroupBox();
+            this.cbTransFlush = new System.Windows.Forms.CheckBox();
+            this.cbRadiatorFlush = new System.Windows.Forms.CheckBox();
+            this.gbMisc = new System.Windows.Forms.GroupBox();
+            this.cbTireRotation = new System.Windows.Forms.CheckBox();
+            this.cbMuffler = new System.Windows.Forms.CheckBox();
+            this.cbInspection = new System.Windows.Forms.CheckBox();
+            this.gbPartsLabor = new System.Windows.Forms.GroupBox();
+            this.txtHours = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtParts = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.gbSummary = new System.Windows.Forms.GroupBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtTax = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtPartsSummary = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtServiceLabor = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnCalc = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.gbOilLube.SuspendLayout();
+            this.gbFlush.SuspendLayout();
+            this.gbMisc.SuspendLayout();
+            this.gbPartsLabor.SuspendLayout();
+            this.gbSummary.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // gbOilLube
+            // 
+            this.gbOilLube.Controls.Add(this.cbLube);
+            this.gbOilLube.Controls.Add(this.cbOil);
+            this.gbOilLube.Location = new System.Drawing.Point(12, 12);
+            this.gbOilLube.Name = "gbOilLube";
+            this.gbOilLube.Size = new System.Drawing.Size(230, 90);
+            this.gbOilLube.TabIndex = 0;
+            this.gbOilLube.TabStop = false;
+            this.gbOilLube.Text = "機油和潤滑";
+            // 
+            // cbLube
+            // 
+            this.cbLube.AutoSize = true;
+            this.cbLube.Location = new System.Drawing.Point(15, 56);
+            this.cbLube.Name = "cbLube";
+            this.cbLube.Size = new System.Drawing.Size(126, 16);
+            this.cbLube.TabIndex = 1;
+            this.cbLube.Text = "潤滑保養 (NT$540)";
+            this.cbLube.UseVisualStyleBackColor = true;
+            // 
+            // cbOil
+            // 
+            this.cbOil.AutoSize = true;
+            this.cbOil.Location = new System.Drawing.Point(15, 28);
+            this.cbOil.Name = "cbOil";
+            this.cbOil.Size = new System.Drawing.Size(132, 16);
+            this.cbOil.TabIndex = 0;
+            this.cbOil.Text = "更換機油 (NT$780)";
+            this.cbOil.UseVisualStyleBackColor = true;
+            // 
+            // gbFlush
+            // 
+            this.gbFlush.Controls.Add(this.cbTransFlush);
+            this.gbFlush.Controls.Add(this.cbRadiatorFlush);
+            this.gbFlush.Location = new System.Drawing.Point(260, 12);
+            this.gbFlush.Name = "gbFlush";
+            this.gbFlush.Size = new System.Drawing.Size(230, 90);
+            this.gbFlush.TabIndex = 1;
+            this.gbFlush.TabStop = false;
+            this.gbFlush.Text = "清洗服務";
+            // 
+            // cbTransFlush
+            // 
+            this.cbTransFlush.AutoSize = true;
+            this.cbTransFlush.Location = new System.Drawing.Point(15, 56);
+            this.cbTransFlush.Name = "cbTransFlush";
+            this.cbTransFlush.Size = new System.Drawing.Size(167, 16);
+            this.cbTransFlush.TabIndex = 1;
+            this.cbTransFlush.Text = "變速箱清洗 (NT$2,400)";
+            this.cbTransFlush.UseVisualStyleBackColor = true;
+            // 
+            // cbRadiatorFlush
+            // 
+            this.cbRadiatorFlush.AutoSize = true;
+            this.cbRadiatorFlush.Location = new System.Drawing.Point(15, 28);
+            this.cbRadiatorFlush.Name = "cbRadiatorFlush";
+            this.cbRadiatorFlush.Size = new System.Drawing.Size(138, 16);
+            this.cbRadiatorFlush.TabIndex = 0;
+            this.cbRadiatorFlush.Text = "水箱清洗 (NT$900)";
+            this.cbRadiatorFlush.UseVisualStyleBackColor = true;
+            // 
+            // gbMisc
+            // 
+            this.gbMisc.Controls.Add(this.cbTireRotation);
+            this.gbMisc.Controls.Add(this.cbMuffler);
+            this.gbMisc.Controls.Add(this.cbInspection);
+            this.gbMisc.Location = new System.Drawing.Point(12, 112);
+            this.gbMisc.Name = "gbMisc";
+            this.gbMisc.Size = new System.Drawing.Size(230, 120);
+            this.gbMisc.TabIndex = 2;
+            this.gbMisc.TabStop = false;
+            this.gbMisc.Text = "其他服務";
+            // 
+            // cbTireRotation
+            // 
+            this.cbTireRotation.AutoSize = true;
+            this.cbTireRotation.Location = new System.Drawing.Point(15, 84);
+            this.cbTireRotation.Name = "cbTireRotation";
+            this.cbTireRotation.Size = new System.Drawing.Size(139, 16);
+            this.cbTireRotation.TabIndex = 2;
+            this.cbTireRotation.Text = "輪胎換位 (NT$600)";
+            this.cbTireRotation.UseVisualStyleBackColor = true;
+            // 
+            // cbMuffler
+            // 
+            this.cbMuffler.AutoSize = true;
+            this.cbMuffler.Location = new System.Drawing.Point(15, 56);
+            this.cbMuffler.Name = "cbMuffler";
+            this.cbMuffler.Size = new System.Drawing.Size(162, 16);
+            this.cbMuffler.TabIndex = 1;
+            this.cbMuffler.Text = "更換消音器 (NT$3,000)";
+            this.cbMuffler.UseVisualStyleBackColor = true;
+            // 
+            // cbInspection
+            // 
+            this.cbInspection.AutoSize = true;
+            this.cbInspection.Location = new System.Drawing.Point(15, 28);
+            this.cbInspection.Name = "cbInspection";
+            this.cbInspection.Size = new System.Drawing.Size(120, 16);
+            this.cbInspection.TabIndex = 0;
+            this.cbInspection.Text = "檢驗 (NT$450)";
+            this.cbInspection.UseVisualStyleBackColor = true;
+            // 
+            // gbPartsLabor
+            // 
+            this.gbPartsLabor.Controls.Add(this.txtHours);
+            this.gbPartsLabor.Controls.Add(this.label2);
+            this.gbPartsLabor.Controls.Add(this.txtParts);
+            this.gbPartsLabor.Controls.Add(this.label1);
+            this.gbPartsLabor.Location = new System.Drawing.Point(260, 112);
+            this.gbPartsLabor.Name = "gbPartsLabor";
+            this.gbPartsLabor.Size = new System.Drawing.Size(230, 120);
+            this.gbPartsLabor.TabIndex = 3;
+            this.gbPartsLabor.TabStop = false;
+            this.gbPartsLabor.Text = "零件和工時";
+            // 
+            // txtHours
+            // 
+            this.txtHours.Location = new System.Drawing.Point(87, 72);
+            this.txtHours.Name = "txtHours";
+            this.txtHours.Size = new System.Drawing.Size(120, 22);
+            this.txtHours.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(14, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 12);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "工時數 (小時)";
+            // 
+            // txtParts
+            // 
+            this.txtParts.Location = new System.Drawing.Point(87, 33);
+            this.txtParts.Name = "txtParts";
+            this.txtParts.Size = new System.Drawing.Size(120, 22);
+            this.txtParts.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(14, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 12);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "零件 (NT$)";
+            // 
+            // gbSummary
+            // 
+            this.gbSummary.Controls.Add(this.txtTotal);
+            this.gbSummary.Controls.Add(this.label6);
+            this.gbSummary.Controls.Add(this.txtTax);
+            this.gbSummary.Controls.Add(this.label5);
+            this.gbSummary.Controls.Add(this.txtPartsSummary);
+            this.gbSummary.Controls.Add(this.label4);
+            this.gbSummary.Controls.Add(this.txtServiceLabor);
+            this.gbSummary.Controls.Add(this.label3);
+            this.gbSummary.Location = new System.Drawing.Point(12, 242);
+            this.gbSummary.Name = "gbSummary";
+            this.gbSummary.Size = new System.Drawing.Size(478, 124);
+            this.gbSummary.TabIndex = 4;
+            this.gbSummary.TabStop = false;
+            this.gbSummary.Text = "費用摘要";
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.Location = new System.Drawing.Point(331, 72);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
+            this.txtTotal.Size = new System.Drawing.Size(129, 22);
+            this.txtTotal.TabIndex = 7;
+            this.txtTotal.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(270, 76);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 12);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "總費用";
+            // 
+            // txtTax
+            // 
+            this.txtTax.Location = new System.Drawing.Point(331, 33);
+            this.txtTax.Name = "txtTax";
+            this.txtTax.ReadOnly = true;
+            this.txtTax.Size = new System.Drawing.Size(129, 22);
+            this.txtTax.TabIndex = 5;
+            this.txtTax.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(250, 37);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 12);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "稅金 (零件)";
+            // 
+            // txtPartsSummary
+            // 
+            this.txtPartsSummary.Location = new System.Drawing.Point(90, 72);
+            this.txtPartsSummary.Name = "txtPartsSummary";
+            this.txtPartsSummary.ReadOnly = true;
+            this.txtPartsSummary.Size = new System.Drawing.Size(129, 22);
+            this.txtPartsSummary.TabIndex = 3;
+            this.txtPartsSummary.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(28, 76);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 12);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "零件";
+            // 
+            // txtServiceLabor
+            // 
+            this.txtServiceLabor.Location = new System.Drawing.Point(90, 33);
+            this.txtServiceLabor.Name = "txtServiceLabor";
+            this.txtServiceLabor.ReadOnly = true;
+            this.txtServiceLabor.Size = new System.Drawing.Size(129, 22);
+            this.txtServiceLabor.TabIndex = 1;
+            this.txtServiceLabor.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 37);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 12);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "服務與工資";
+            // 
+            // btnCalc
+            // 
+            this.btnCalc.Location = new System.Drawing.Point(122, 378);
+            this.btnCalc.Name = "btnCalc";
+            this.btnCalc.Size = new System.Drawing.Size(96, 28);
+            this.btnCalc.TabIndex = 5;
+            this.btnCalc.Text = "計算總額";
+            this.btnCalc.UseVisualStyleBackColor = true;
+            this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(224, 378);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(96, 28);
+            this.btnClear.TabIndex = 6;
+            this.btnClear.Text = "清除";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(326, 378);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(96, 28);
+            this.btnExit.TabIndex = 7;
+            this.btnExit.Text = "離開";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(20, 378);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(96, 28);
+            this.btnSave.TabIndex = 8;
+            this.btnSave.Text = "儲存維修明細";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(504, 418);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnCalc);
+            this.Controls.Add(this.gbSummary);
+            this.Controls.Add(this.gbPartsLabor);
+            this.Controls.Add(this.gbMisc);
+            this.Controls.Add(this.gbFlush);
+            this.Controls.Add(this.gbOilLube);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "汽車維修服務";
+            this.gbOilLube.ResumeLayout(false);
+            this.gbOilLube.PerformLayout();
+            this.gbFlush.ResumeLayout(false);
+            this.gbFlush.PerformLayout();
+            this.gbMisc.ResumeLayout(false);
+            this.gbMisc.PerformLayout();
+            this.gbPartsLabor.ResumeLayout(false);
+            this.gbPartsLabor.PerformLayout();
+            this.gbSummary.ResumeLayout(false);
+            this.gbSummary.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.GroupBox gbOilLube;
+        private System.Windows.Forms.CheckBox cbLube;
+        private System.Windows.Forms.CheckBox cbOil;
+        private System.Windows.Forms.GroupBox gbFlush;
+        private System.Windows.Forms.CheckBox cbTransFlush;
+        private System.Windows.Forms.CheckBox cbRadiatorFlush;
+        private System.Windows.Forms.GroupBox gbMisc;
+        private System.Windows.Forms.CheckBox cbTireRotation;
+        private System.Windows.Forms.CheckBox cbMuffler;
+        private System.Windows.Forms.CheckBox cbInspection;
+        private System.Windows.Forms.GroupBox gbPartsLabor;
+        private System.Windows.Forms.TextBox txtHours;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtParts;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox gbSummary;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtTax;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtPartsSummary;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtServiceLabor;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnCalc;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnSave;
+    }
+}
+

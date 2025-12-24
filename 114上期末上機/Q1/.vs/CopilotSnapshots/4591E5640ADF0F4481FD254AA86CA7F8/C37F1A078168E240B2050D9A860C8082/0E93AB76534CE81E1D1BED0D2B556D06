@@ -1,0 +1,158 @@
+﻿namespace Q1
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// 設計工具所需的變數。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        private System.Windows.Forms.Label lblCpuTitle;
+        private System.Windows.Forms.Label lblPlayerTitle;
+        private System.Windows.Forms.Label lblCpuEmoji;
+        private System.Windows.Forms.Label lblPlayerEmoji;
+        private System.Windows.Forms.TextBox txtResult;
+        private System.Windows.Forms.Button btnRock;
+        private System.Windows.Forms.Button btnPaper;
+        private System.Windows.Forms.Button btnScissors;
+        private System.Windows.Forms.Button btnEnd;
+
+        /// <summary>
+        /// 清除任何使用中的資源。
+        /// </summary>
+        /// <param name="disposing">如果應該處置受控資源則為 true，否則為 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form 設計工具產生的程式碼
+
+        /// <summary>
+        /// 此為設計工具支援所需的方法 - 請勿使用程式碼編輯器修改
+        /// 這個方法的內容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.lblCpuTitle = new System.Windows.Forms.Label();
+            this.lblPlayerTitle = new System.Windows.Forms.Label();
+            this.lblCpuEmoji = new System.Windows.Forms.Label();
+            this.lblPlayerEmoji = new System.Windows.Forms.Label();
+            this.txtResult = new System.Windows.Forms.TextBox();
+            this.btnRock = new System.Windows.Forms.Button();
+            this.btnPaper = new System.Windows.Forms.Button();
+            this.btnScissors = new System.Windows.Forms.Button();
+            this.btnEnd = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // Form1
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(860, 520);
+            this.Font = new System.Drawing.Font("Microsoft JhengHei UI", 18F);
+            this.Text = "猜拳遊戲";
+            // 
+            // lblCpuTitle
+            // 
+            this.lblCpuTitle.AutoSize = true;
+            this.lblCpuTitle.Location = new System.Drawing.Point(120, 40);
+            this.lblCpuTitle.Name = "lblCpuTitle";
+            this.lblCpuTitle.Size = new System.Drawing.Size(110, 30);
+            this.lblCpuTitle.Text = "電腦出";
+            // 
+            // lblPlayerTitle
+            // 
+            this.lblPlayerTitle.AutoSize = true;
+            this.lblPlayerTitle.Location = new System.Drawing.Point(560, 40);
+            this.lblPlayerTitle.Name = "lblPlayerTitle";
+            this.lblPlayerTitle.Size = new System.Drawing.Size(110, 30);
+            this.lblPlayerTitle.Text = "玩家出";
+            // 
+            // lblCpuEmoji
+            // 
+            this.lblCpuEmoji.BackColor = System.Drawing.Color.Peru;
+            this.lblCpuEmoji.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCpuEmoji.Location = new System.Drawing.Point(60, 90);
+            this.lblCpuEmoji.Name = "lblCpuEmoji";
+            this.lblCpuEmoji.Size = new System.Drawing.Size(240, 120);
+            this.lblCpuEmoji.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblPlayerEmoji
+            // 
+            this.lblPlayerEmoji.BackColor = System.Drawing.Color.Peru;
+            this.lblPlayerEmoji.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPlayerEmoji.Location = new System.Drawing.Point(500, 90);
+            this.lblPlayerEmoji.Name = "lblPlayerEmoji";
+            this.lblPlayerEmoji.Size = new System.Drawing.Size(240, 120);
+            this.lblPlayerEmoji.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtResult
+            // 
+            this.txtResult.Location = new System.Drawing.Point(180, 240);
+            this.txtResult.Name = "txtResult";
+            this.txtResult.Size = new System.Drawing.Size(500, 38);
+            this.txtResult.TabIndex = 0;
+            // 
+            // btnRock
+            // 
+            this.btnRock.Location = new System.Drawing.Point(120, 310);
+            this.btnRock.Name = "btnRock";
+            this.btnRock.Size = new System.Drawing.Size(160, 60);
+            this.btnRock.TabIndex = 1;
+            this.btnRock.Text = "石頭";
+            this.btnRock.UseVisualStyleBackColor = true;
+            this.btnRock.Click += new System.EventHandler(this.btnRock_Click);
+            // 
+            // btnPaper
+            // 
+            this.btnPaper.Location = new System.Drawing.Point(350, 310);
+            this.btnPaper.Name = "btnPaper";
+            this.btnPaper.Size = new System.Drawing.Size(160, 60);
+            this.btnPaper.TabIndex = 2;
+            this.btnPaper.Text = "布";
+            this.btnPaper.UseVisualStyleBackColor = true;
+            this.btnPaper.Click += new System.EventHandler(this.btnPaper_Click);
+            // 
+            // btnScissors
+            // 
+            this.btnScissors.Location = new System.Drawing.Point(580, 310);
+            this.btnScissors.Name = "btnScissors";
+            this.btnScissors.Size = new System.Drawing.Size(160, 60);
+            this.btnScissors.TabIndex = 3;
+            this.btnScissors.Text = "剪刀";
+            this.btnScissors.UseVisualStyleBackColor = true;
+            this.btnScissors.Click += new System.EventHandler(this.btnScissors_Click);
+            // 
+            // btnEnd
+            // 
+            this.btnEnd.Location = new System.Drawing.Point(300, 400);
+            this.btnEnd.Name = "btnEnd";
+            this.btnEnd.Size = new System.Drawing.Size(260, 60);
+            this.btnEnd.TabIndex = 4;
+            this.btnEnd.Text = "結束遊戲";
+            this.btnEnd.UseVisualStyleBackColor = true;
+            this.btnEnd.Click += new System.EventHandler(this.btnEnd_Click);
+
+            // add controls
+            this.Controls.Add(this.lblCpuTitle);
+            this.Controls.Add(this.lblPlayerTitle);
+            this.Controls.Add(this.lblCpuEmoji);
+            this.Controls.Add(this.lblPlayerEmoji);
+            this.Controls.Add(this.txtResult);
+            this.Controls.Add(this.btnRock);
+            this.Controls.Add(this.btnPaper);
+            this.Controls.Add(this.btnScissors);
+            this.Controls.Add(this.btnEnd);
+
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
+
+        #endregion
+    }
+}
+

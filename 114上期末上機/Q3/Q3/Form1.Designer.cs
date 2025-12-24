@@ -35,6 +35,9 @@
             this.fifthLabel = new System.Windows.Forms.Label();
             this.generateButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.drawButton = new System.Windows.Forms.Button();
+            this.drawNumbersListBox = new System.Windows.Forms.ListBox();
+            this.resultLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // firstLabel
@@ -52,7 +55,7 @@
             // 
             this.secondLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.secondLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.secondLabel.Location = new System.Drawing.Point(125, 25);
+            this.secondLabel.Location = new System.Drawing.Point(178, 25);
             this.secondLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.secondLabel.Name = "secondLabel";
             this.secondLabel.Size = new System.Drawing.Size(82, 62);
@@ -63,7 +66,7 @@
             // 
             this.thirdLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.thirdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thirdLabel.Location = new System.Drawing.Point(213, 25);
+            this.thirdLabel.Location = new System.Drawing.Point(329, 25);
             this.thirdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.thirdLabel.Name = "thirdLabel";
             this.thirdLabel.Size = new System.Drawing.Size(82, 62);
@@ -74,7 +77,7 @@
             // 
             this.fourthLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.fourthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fourthLabel.Location = new System.Drawing.Point(301, 25);
+            this.fourthLabel.Location = new System.Drawing.Point(477, 25);
             this.fourthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.fourthLabel.Name = "fourthLabel";
             this.fourthLabel.Size = new System.Drawing.Size(82, 62);
@@ -85,7 +88,7 @@
             // 
             this.fifthLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.fifthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fifthLabel.Location = new System.Drawing.Point(390, 25);
+            this.fifthLabel.Location = new System.Drawing.Point(629, 25);
             this.fifthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.fifthLabel.Name = "fifthLabel";
             this.fifthLabel.Size = new System.Drawing.Size(82, 62);
@@ -107,7 +110,7 @@
             // exitButton
             // 
             this.exitButton.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.exitButton.Location = new System.Drawing.Point(260, 103);
+            this.exitButton.Location = new System.Drawing.Point(501, 103);
             this.exitButton.Margin = new System.Windows.Forms.Padding(4);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(224, 55);
@@ -116,11 +119,46 @@
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
+            // drawButton
+            // 
+            this.drawButton.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.drawButton.Location = new System.Drawing.Point(260, 103);
+            this.drawButton.Margin = new System.Windows.Forms.Padding(4);
+            this.drawButton.Name = "drawButton";
+            this.drawButton.Size = new System.Drawing.Size(224, 55);
+            this.drawButton.TabIndex = 10;
+            this.drawButton.Text = "開獎號碼";
+            this.drawButton.UseVisualStyleBackColor = true;
+            this.drawButton.Click += new System.EventHandler(this.drawButton_Click);
+            // 
+            // drawNumbersListBox
+            // 
+            this.drawNumbersListBox.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.drawNumbersListBox.FormattingEnabled = true;
+            this.drawNumbersListBox.ItemHeight = 36;
+            this.drawNumbersListBox.Location = new System.Drawing.Point(36, 199);
+            this.drawNumbersListBox.Name = "drawNumbersListBox";
+            this.drawNumbersListBox.Size = new System.Drawing.Size(435, 220);
+            this.drawNumbersListBox.TabIndex = 9;
+            // 
+            // resultLabel
+            // 
+            this.resultLabel.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.resultLabel.ForeColor = System.Drawing.Color.Red;
+            this.resultLabel.Location = new System.Drawing.Point(510, 199);
+            this.resultLabel.Name = "resultLabel";
+            this.resultLabel.Size = new System.Drawing.Size(466, 220);
+            this.resultLabel.TabIndex = 11;
+            this.resultLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(785, 402);
+            this.ClientSize = new System.Drawing.Size(1007, 455);
+            this.Controls.Add(this.resultLabel);
+            this.Controls.Add(this.drawButton);
+            this.Controls.Add(this.drawNumbersListBox);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.generateButton);
             this.Controls.Add(this.fifthLabel);
@@ -144,6 +182,9 @@
         private System.Windows.Forms.Label fifthLabel;
         private System.Windows.Forms.Button generateButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button drawButton;
+        private System.Windows.Forms.ListBox drawNumbersListBox;
+        private System.Windows.Forms.Label resultLabel;
     }
 }
 

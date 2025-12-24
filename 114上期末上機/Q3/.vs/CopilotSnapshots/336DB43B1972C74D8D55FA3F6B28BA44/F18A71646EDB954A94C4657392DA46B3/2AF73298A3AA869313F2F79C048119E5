@@ -1,0 +1,176 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Q3
+{
+    public partial class Form1 : Form
+    {
+        private int[] generatedNumbers = null; // 儲存產生的號碼
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+
+        /// <summary>
+        /// 「產生號碼」按鈕點擊事件處理器
+        /// 當使用者點擊「產生號碼」按鈕時觸發此方法
+        /// 負責產生五個隨機的彩券號碼並顯示在標籤上
+        /// </summary>
+        private void generateButton_Click(object sender, EventArgs e)
+        {
+            // 建立隨機數生成器
+            const int SIZE = 5;
+            // 彩券號碼數量
+            generatedNumbers = new int[SIZE];
+            /*********************************************
+             * 在此產生樂透號碼並指派給 lotteryNumbers 陣列 *
+             ****************************************/
+            Label[] labels = new Label[SIZE] { firstLabel, secondLabel, thirdLabel, fourthLabel, fifthLabel };
+
+            Random random = new Random();
+
+            // 產生五個隨機號碼
+            for (int i = 0; i < SIZE; i++)
+            {
+                int temp;
+                bool isDuplicate;
+
+                do
+                {
+                    temp = random.Next(1, 50); // 產生 1 到 49 的隨機數
+                    isDuplicate = false;
+                    // 檢查是否有重複號碼
+                    for (int j = 0; j < i; j++)
+                    {
+                        if (generatedNumbers[j] == temp)
+                        {
+                            isDuplicate = true;
+                            break;
+                        }
+                    }
+                }
+                while (isDuplicate);
+
+                generatedNumbers[i] = temp;
+            }
+            //firstLabel.Text = lotteryNumbers[0].ToString();
+            //secondLabel.Text = lotteryNumbers[1].ToString();
+            //thirdLabel.Text = lotteryNumbers[2].ToString();
+            //fourthLabel.Text = lotteryNumbers[3].ToString();
+            //fifthLabel.Text = lotteryNumbers[4].ToString();
+
+            // 顯示產生的號碼在標籤上
+            for (int i = 0; i < SIZE; i++)
+            {
+                labels[i].Text = generatedNumbers[i].ToString();
+            }
+
+        }
+
+        /// <summary>
+        /// 「開獎號碼」按鈕點擊事件處理器
+        /// 當使用者點擊「開獎號碼」按鈕時觸發此方法
+        /// 功能：處理檔案選擇與讀取開獎號碼的流程
+        /// </summary>
+        private void drawButton_Click(object sender, EventArgs e)
+        {
+            // 建立檔案開啟對話框
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "文字檔案 (*.txt)|*.txt|所有檔案 (*.*)|*.*";
+            openFileDialog.Title = "選擇開獎號碼檔案";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    // 清空ListBox和結果顯示區域
+                    drawNumbersListBox.Items.Clear();
+                    resultLabel.Text = "";
+
+                    // 讀取檔案中的開獎號碼
+                    string filePath = openFileDialog.FileName;
+                    string[] lines = File.ReadAllLines(filePath);
+
+                    List<int> drawNumbers = new List<int>();
+
+                    // 解析每一行，將號碼加入ListBox
+                    foreach (string line in lines)
+                    {
+                        if (int.TryParse(line.Trim(), out int number))
+                        {
+                            drawNumbers.Add(number);
+                            drawNumbersListBox.Items.Add(number.ToString());
+                        }
+                    }
+
+                    // 如果沒有產生號碼，提示使用者
+                    if (generatedNumbers == null || generatedNumbers.Length == 0)
+                    {
+                        MessageBox.Show("請先產生號碼!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
+
+                    // 比對號碼並顯示結果
+                    CompareNumbers(drawNumbers);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("讀取檔案出錯: " + ex.Message, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        /// <summary>
+        /// 比對產生的號碼和開獎號碼
+        /// </summary>
+        private void CompareNumbers(List<int> drawNumbers)
+        {
+            int matchCount = 0;
+            StringBuilder resultText = new StringBuilder();
+
+            resultText.AppendLine("比對結果:");
+            resultText.AppendLine("================");
+
+            // 檢查產生的號碼中有多少個在開獎號碼中
+            foreach (int num in generatedNumbers)
+            {
+                if (drawNumbers.Contains(num))
+                {
+                    matchCount++;
+                    resultText.AppendLine($"✓ {num} (中獎)");
+                }
+                else
+                {
+                    resultText.AppendLine($"✗ {num}");
+                }
+            }
+
+            resultText.AppendLine("================");
+            resultText.AppendLine($"共中獎: {matchCount} 個");
+
+            resultLabel.Text = resultText.ToString();
+        }
+
+        /// <summary>
+        /// 「離開」按鈕點擊事件處理器
+        /// 當使用者點擊「離開」按鈕時觸發此方法
+        /// 功能：關閉表單並結束程式執行
+        /// </summary>
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            // 關閉表單
+            this.Close();
+        }
+
+    }
+}

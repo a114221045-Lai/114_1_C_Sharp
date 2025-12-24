@@ -1,0 +1,214 @@
+﻿namespace Q3
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.firstLabel = new System.Windows.Forms.Label();
+            this.secondLabel = new System.Windows.Forms.Label();
+            this.thirdLabel = new System.Windows.Forms.Label();
+            this.fourthLabel = new System.Windows.Forms.Label();
+            this.fifthLabel = new System.Windows.Forms.Label();
+            this.generateButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.drawButton = new System.Windows.Forms.Button();
+            this.drawNumbersListBox = new System.Windows.Forms.ListBox();
+            this.resultLabel = new System.Windows.Forms.Label();
+            this.generatedNumbersLabel = new System.Windows.Forms.Label();
+            this.drawNumbersLabel = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // firstLabel
+            // 
+            this.firstLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.firstLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstLabel.Location = new System.Drawing.Point(36, 25);
+            this.firstLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.firstLabel.Name = "firstLabel";
+            this.firstLabel.Size = new System.Drawing.Size(82, 62);
+            this.firstLabel.TabIndex = 0;
+            this.firstLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // secondLabel
+            // 
+            this.secondLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.secondLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondLabel.Location = new System.Drawing.Point(125, 25);
+            this.secondLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.secondLabel.Name = "secondLabel";
+            this.secondLabel.Size = new System.Drawing.Size(82, 62);
+            this.secondLabel.TabIndex = 1;
+            this.secondLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // thirdLabel
+            // 
+            this.thirdLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.thirdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thirdLabel.Location = new System.Drawing.Point(213, 25);
+            this.thirdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.thirdLabel.Name = "thirdLabel";
+            this.thirdLabel.Size = new System.Drawing.Size(82, 62);
+            this.thirdLabel.TabIndex = 2;
+            this.thirdLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fourthLabel
+            // 
+            this.fourthLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.fourthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fourthLabel.Location = new System.Drawing.Point(301, 25);
+            this.fourthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.fourthLabel.Name = "fourthLabel";
+            this.fourthLabel.Size = new System.Drawing.Size(82, 62);
+            this.fourthLabel.TabIndex = 3;
+            this.fourthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fifthLabel
+            // 
+            this.fifthLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.fifthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fifthLabel.Location = new System.Drawing.Point(390, 25);
+            this.fifthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.fifthLabel.Name = "fifthLabel";
+            this.fifthLabel.Size = new System.Drawing.Size(82, 62);
+            this.fifthLabel.TabIndex = 4;
+            this.fifthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // generateButton
+            // 
+            this.generateButton.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.generateButton.Location = new System.Drawing.Point(19, 103);
+            this.generateButton.Margin = new System.Windows.Forms.Padding(4);
+            this.generateButton.Name = "generateButton";
+            this.generateButton.Size = new System.Drawing.Size(224, 55);
+            this.generateButton.TabIndex = 5;
+            this.generateButton.Text = "產生號碼";
+            this.generateButton.UseVisualStyleBackColor = true;
+            this.generateButton.Click += new System.EventHandler(this.generateButton_Click);
+            // 
+            // exitButton
+            // 
+            this.exitButton.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.exitButton.Location = new System.Drawing.Point(260, 103);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(4);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(224, 55);
+            this.exitButton.TabIndex = 6;
+            this.exitButton.Text = "離開";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // generatedNumbersLabel
+            // 
+            this.generatedNumbersLabel.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.generatedNumbersLabel.Location = new System.Drawing.Point(19, 166);
+            this.generatedNumbersLabel.Name = "generatedNumbersLabel";
+            this.generatedNumbersLabel.Size = new System.Drawing.Size(224, 30);
+            this.generatedNumbersLabel.TabIndex = 7;
+            this.generatedNumbersLabel.Text = "產生的號碼";
+            // 
+            // drawNumbersLabel
+            // 
+            this.drawNumbersLabel.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.drawNumbersLabel.Location = new System.Drawing.Point(260, 166);
+            this.drawNumbersLabel.Name = "drawNumbersLabel";
+            this.drawNumbersLabel.Size = new System.Drawing.Size(224, 30);
+            this.drawNumbersLabel.TabIndex = 8;
+            this.drawNumbersLabel.Text = "開獎號碼";
+            // 
+            // drawNumbersListBox
+            // 
+            this.drawNumbersListBox.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.drawNumbersListBox.FormattingEnabled = true;
+            this.drawNumbersListBox.ItemHeight = 24;
+            this.drawNumbersListBox.Location = new System.Drawing.Point(260, 200);
+            this.drawNumbersListBox.Name = "drawNumbersListBox";
+            this.drawNumbersListBox.Size = new System.Drawing.Size(224, 148);
+            this.drawNumbersListBox.TabIndex = 9;
+            // 
+            // drawButton
+            // 
+            this.drawButton.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.drawButton.Location = new System.Drawing.Point(501, 103);
+            this.drawButton.Margin = new System.Windows.Forms.Padding(4);
+            this.drawButton.Name = "drawButton";
+            this.drawButton.Size = new System.Drawing.Size(224, 55);
+            this.drawButton.TabIndex = 10;
+            this.drawButton.Text = "開獎號碼";
+            this.drawButton.UseVisualStyleBackColor = true;
+            this.drawButton.Click += new System.EventHandler(this.drawButton_Click);
+            // 
+            // resultLabel
+            // 
+            this.resultLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.resultLabel.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.resultLabel.Location = new System.Drawing.Point(19, 200);
+            this.resultLabel.Name = "resultLabel";
+            this.resultLabel.Size = new System.Drawing.Size(224, 148);
+            this.resultLabel.TabIndex = 11;
+            this.resultLabel.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(785, 402);
+            this.Controls.Add(this.resultLabel);
+            this.Controls.Add(this.drawButton);
+            this.Controls.Add(this.drawNumbersListBox);
+            this.Controls.Add(this.drawNumbersLabel);
+            this.Controls.Add(this.generatedNumbersLabel);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.generateButton);
+            this.Controls.Add(this.fifthLabel);
+            this.Controls.Add(this.fourthLabel);
+            this.Controls.Add(this.thirdLabel);
+            this.Controls.Add(this.secondLabel);
+            this.Controls.Add(this.firstLabel);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Form1";
+            this.Text = "樂透號碼產生器";
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label firstLabel;
+        private System.Windows.Forms.Label secondLabel;
+        private System.Windows.Forms.Label thirdLabel;
+        private System.Windows.Forms.Label fourthLabel;
+        private System.Windows.Forms.Label fifthLabel;
+        private System.Windows.Forms.Button generateButton;
+        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button drawButton;
+        private System.Windows.Forms.ListBox drawNumbersListBox;
+        private System.Windows.Forms.Label resultLabel;
+        private System.Windows.Forms.Label generatedNumbersLabel;
+        private System.Windows.Forms.Label drawNumbersLabel;
+    }
+}
+
